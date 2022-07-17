@@ -1,0 +1,6 @@
+div {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
