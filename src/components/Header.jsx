@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import logo from '../img/logosemicone.png';
+// import { Link } from 'react-router-dom';
 import {
   MainHeader, MenuIcons, Fold, Unfold,
 } from './Header.styles';
 // import { StyleBiMenu } from '../Styles/Generals';
 import LateralMenu from './LateralMenu';
+import logoG from '../img/LogoYogaGold.png';
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
@@ -16,7 +17,10 @@ export default function Header() {
   return (
     <MainHeader>
       <LateralMenu menu={menu} />
-      <img src={logo} alt="logo" width="150px" />
+      <a href="/">
+        <img src={logoG} alt="logo gold" />
+      </a>
+      <p>Mente de Yoga</p>
       <MenuIcons>
         {
           // eslint-disable-next-line react/jsx-wrap-multilines

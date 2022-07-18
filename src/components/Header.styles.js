@@ -2,15 +2,21 @@ import styled from 'styled-components';
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
 
 export const MainHeader = styled.div`
+    font-family: 'Cormorant SC', serif;
+    color: var(--g1);
     width: var(--wid);
-    background-color: var(--amarelo-claro-100);
+    background-color: var(--g10);
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 8px 8px;
     margin-bottom: 8px;
+
+    img {
+      width: 50px;
+    }
 `;
 
 export const GhostHeader = styled.div`
@@ -21,13 +27,14 @@ export const GhostHeader = styled.div`
 export const Fold = styled(AiOutlineMenuFold)`
   cursor: pointer;
   font-size: 30px;
-  color: black;
+  color: var(--g5);
   /* margin-right: 16px; */
 `;
 
 export const Unfold = styled(AiOutlineMenuUnfold)`
   cursor: pointer;
   font-size: 30px;
+  color: var(--g5);
   /* margin-right: 16px; */
 `;
 

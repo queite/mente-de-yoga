@@ -7,20 +7,14 @@ export default function LateralMenu({ menu }) {
   return (
     <Container menu={menu}>
       <Menu>
-        <StyleLink to="/">
+        {/* <StyleLink to="/">
           HOME
+        </StyleLink> */}
+        <StyleLink to="/cursos">
+          CURSOS
         </StyleLink>
-        <StyleLink to="/servicos">
-          SERVIÇOS
-        </StyleLink>
-        <StyleLink to="/equipe">
-          EQUIPE
-        </StyleLink>
-        <StyleLink to="/blog">
-          BLOG
-        </StyleLink>
-        <StyleLink to="/galeria">
-          GALERIA
+        <StyleLink to="/artigos">
+          ARTIGOS
         </StyleLink>
         <StyleLink to="/contato">
           CONTATO
