@@ -6,10 +6,10 @@ import MainFooter from './Footer.styles';
 export default function Footer({ position }) {
   return (
     <MainFooter position={position}>
-      <a target="_blank" href="https://www.instagram.com/josianahertelespaco/" rel="noreferrer">
+      <a target="_blank" href="https://www.instagram.com/mentedeyoga/" rel="noreferrer">
         <TiSocialInstagramCircular />
       </a>
-      <a target="_blank" href="https://www.facebook.com/psicopedagogajosianahertel/?ti=as" rel="noreferrer">
+      <a target="_blank" href="https://www.instagram.com/mentedeyoga/" rel="noreferrer">
         <TiSocialFacebookCircular />
       </a>
     </MainFooter>
