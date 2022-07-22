@@ -10,8 +10,8 @@ const MainFooter = styled.footer`
   border-radius: 8px 8px 0 0;
   /* margin-bottom: 8px; */
   font-size: 24px;
-  position: ${(props) => (props.position || 'static')};
-  bottom: 0;
+  /* position: ${(props) => (props.position || 'static')}; */
+  /* bottom: 0; */
 
   a {
     text-decoration: none;

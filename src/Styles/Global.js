@@ -6,6 +6,7 @@ const Global = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
   }
   :root {
       --escuro: black;
@@ -55,6 +56,9 @@ const Global = createGlobalStyle`
       --wid: 100vw; // largura
       --hei: 100vh; // altura  
     }
+    // Fontes
+    
+    // font-family: 'Syne Mono', monospace;
 
     /* @font-face {
       font-family: 'tama';
