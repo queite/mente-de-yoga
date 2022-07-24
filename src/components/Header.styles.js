@@ -2,20 +2,23 @@ import styled from 'styled-components';
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
 
 export const MainHeader = styled.div`
-    /* font-family: 'Cormorant SC', serif; */
-    /* color: var(--g1); */
-    width: var(--wid);
-    min-height: 90px;
     background-color: var(--g11);
-    padding: 0 130px 0 130px;
+    /* width: var(--wid); */
+    /* min-height: 90px; */
+    /* padding: 0 130px 0 130px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* position: sticky; */
+`;
+
+export const ContentHeader = styled.div`
+    color: var(--g6);
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
     align-items: center;
-    position: sticky;
-    /* border-radius: 0 0 8px 8px; */
-    /* margin-bottom: 60px; */
-
-
+    padding: 5px 0;
 `;
 
 export const LogoNome = styled.div`
@@ -24,19 +27,23 @@ export const LogoNome = styled.div`
   font-size: 32px;
   color: var(--g6);
   align-items: center;
-  /* background-color: red; */
   img {
       height: 80px;
-      /* background-color: blue; */
     }
-  p {
-    padding-left: 20px;
-  }
+    h1 {
+        margin-left: 20px;
+        font-family: 'Cormorant SC', serif;
+        font-size: 32px;
+        font-weight: 300;
+    }
 `;
 
-export const GhostHeader = styled.div`
-  width: var(--wid);
-  height: 70px;
+export const Menu = styled.div`
+    display: flex;
+    /* background-color:red; */
+    gap: 20px;
+    justify-content: flex-end;
+    flex-grow: 1;
 `;
 
 export const Fold = styled(AiOutlineMenuFold)`

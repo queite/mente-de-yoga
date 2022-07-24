@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import tama from '../fonts/01_tama.TTF';
 
 const Global = createGlobalStyle`
   * {
@@ -55,17 +54,11 @@ const Global = createGlobalStyle`
       // largura e altura
       --wid: 100vw; // largura
       --hei: 100vh; // altura  
+
+      background-color: var(--g12);
     }
     // Fontes
     
-    // font-family: 'Syne Mono', monospace;
-
-    /* @font-face {
-      font-family: 'tama';
-      src: url(${tama}) format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    } */
 `;
 
 export default Global;
