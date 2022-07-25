@@ -20,7 +20,7 @@ const MainCursos = styled.div`
   align-items: end;
 `;
 const H1 = styled.h1`
-    color: var(--g12);
+    color: var(--g11);
     font-size: 96px;
     font-family: 'Cormorant SC', serif;
     font-weight: 300;
@@ -47,8 +47,19 @@ const St = styled.strong`
 
 const Img = styled.div`
 grid-area: img;
+position: relative;
     img {
         width: 460px;
+        /* position: relative; */
+    }
+    div {
+        position: absolute;
+        border-bottom: 5px dotted var(--d3);
+        border-left: 5px dotted var(--d3);        
+        width: 50%;
+        height: 30%;
+        bottom: -3px;
+        left: -5px;
     }
 `;
 
@@ -84,6 +95,7 @@ export default function Cursos() {
         </Text>
         <Img>
           <img src={hathaImg} alt="hatha" />
+          <div />
         </Img>
       </MainCursos>
     </Body>
