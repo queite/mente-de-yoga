@@ -1,9 +1,13 @@
 import styled from 'styled-components';
+import logoB from '../img/LogoYogaBlack.png';
 
 export const HeroBody = styled.div`
-  background-color: var(--g12);
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: url(${logoB});
+  background-repeat: no-repeat;
+  background-position: 150% 50%;
+  background-size: 900px;
   `;
 
 export const MainHero = styled.div`
@@ -21,6 +25,8 @@ export const Img = styled.div`
 grid-area: img;
   img { 
     width: 280px;
+    border-radius: 4px;
+    /* filter: sepia(0%); */
   }
 `;
 

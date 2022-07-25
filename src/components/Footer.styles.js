@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
 const MainFooter = styled.footer`
-  width: var(--wid);
-  background-color: var(--g10);
+  /* width: var(--wid); */
+  min-height: 60px;
+  background-color: var(--g11);
   display: flex;
   justify-content: center;
   gap: 10px;
   align-items: center;
-  border-radius: 8px 8px 0 0;
-  /* margin-bottom: 8px; */
-  font-size: 24px;
+  font-size: 40px;
   /* position: ${(props) => (props.position || 'static')}; */
   /* bottom: 0; */
 
