@@ -1,14 +1,9 @@
 import styled from 'styled-components';
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 export const MainHeader = styled.div`
     background-color: var(--g11);
-    /* width: var(--wid); */
-    /* min-height: 90px; */
-    /* padding: 0 130px 0 130px; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
     /* position: sticky; */
 `;
 
@@ -23,18 +18,10 @@ export const ContentHeader = styled.div`
 
 export const LogoNome = styled.div`
   display: flex;
-  font-family: 'Cormorant SC', serif;
-  font-size: 32px;
-  color: var(--g6);
+  gap: 20px;
   align-items: center;
   img {
       height: 80px;
-    }
-    h1 {
-        margin-left: 20px;
-        font-family: 'Cormorant SC', serif;
-        font-size: 32px;
-        font-weight: 300;
     }
 `;
 
@@ -68,3 +55,6 @@ export const MenuIcons = styled.div`
         transition: visibility 2s linear 300ms, opacity 300ms; 
     }*/
   `;
+export const StLink = styled(Link)`
+  color: var(--g5)
+`;

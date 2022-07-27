@@ -37,7 +37,8 @@ h1 {
   font-size: 48px;
   line-height: 2;
   color: var(--g2);
-  font-weight: 300;
+  font-weight: 100;
+  letter-spacing: 4px;
 }
 p {
   font-family: 'Open Sans', sans-serif;
@@ -46,4 +47,11 @@ p {
   line-height: 1.5;
   font-weight: 300;
 }
+`;
+
+export const Dev = styled.div`
+  font-family: 'deva';
+  font-size: 30px;
+  font-weight: 100;
+  /* letter-spacing: 4px; */
 `;

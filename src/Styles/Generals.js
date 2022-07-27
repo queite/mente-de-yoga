@@ -31,3 +31,21 @@ export const StyleLink = styled(Link)`
   width: 100%;
   font-family: 'Open Sans', sans-serif;
 `;
+
+export const BasicMain = styled.main`
+  padding-top: 60px;
+  padding-bottom: 60px;
+`;
+
+export const BasicContent = styled.div`
+    width: 80%;
+    margin: 0 auto;
+`;
+
+export const Title = styled.div`
+    /* color: var(--g11); */
+    color: ${(props) => `var(--${props.color})`};
+    font-size: ${(props) => `${props.size}px`};;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 300;
+`;

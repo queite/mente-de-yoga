@@ -1,10 +1,13 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import {
   MainHeader,
   LogoNome,
   ContentHeader,
   Menu,
+  StLink,
 } from './Header.styles';
+import { Title } from '../Styles/Generals';
 import logoG from '../img/LogoYogaGold.png';
 
 export default function Header() {
@@ -13,12 +16,12 @@ export default function Header() {
       <ContentHeader>
         <LogoNome>
           <img src={logoG} alt="logo gold" />
-          <h1>Mente de Yoga</h1>
+          <Title color="g6" size="32">Mente de Yoga</Title>
         </LogoNome>
         <Menu>
-          <p>CURSOS</p>
+          <StLink to="/cursos">CURSOS</StLink>
           <p>TREINAMENTOS</p>
-          <p>BLOG</p>
+          <p>ARTIGOS</p>
           <p>SOBRE</p>
         </Menu>
       </ContentHeader>

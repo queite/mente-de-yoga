@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import deva from './fonts/deva.ttf';
 
 const Global = createGlobalStyle`
   * {
@@ -30,6 +31,7 @@ const Global = createGlobalStyle`
       --m6: rgba(91, 39, 25, 1);
       --m7: rgba(63, 22, 11, 1);
       // dourado
+      --laranja: rgba(255, 125, 0, 1);
       --d1: rgba(255, 184, 132, 1);
       --d2: rgba(250, 143, 97, 1);
       --d3: rgba(214, 117, 65, 1);
@@ -58,7 +60,13 @@ const Global = createGlobalStyle`
       background-color: var(--g12);
     }
     // Fontes
-    
+    @font-face {
+      font-family: 'deva';
+      src: url(${deva}) format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
 `;
 
 export default Global;
