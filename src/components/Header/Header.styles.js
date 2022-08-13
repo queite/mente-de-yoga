@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { BasicLink } from '../../Styles/Generals';
 
 export const MainHeader = styled.div`
     background-color: var(--g11);
@@ -55,6 +55,14 @@ export const MenuIcons = styled.div`
         transition: visibility 2s linear 300ms, opacity 300ms; 
     }*/
   `;
-export const StLink = styled(Link)`
-  color: var(--g5)
+export const StLink = styled(BasicLink)`
+  color: var(--g5);
+  border-bottom: 1px solid var(--g11);
+  &:hover{
+    border-bottom: 1px solid var(--d4);
+  }
+`;
+
+export const HomeLink = styled(BasicLink)`
+  color: var(--g5);
 `;

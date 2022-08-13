@@ -2,30 +2,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import hathaImg from '../img/uns/yoga4.jpg';
-import { Title } from '../Styles/Generals';
+import { BasicMain, BasicContent } from '../Styles/Generals';
+import { Title, St } from '../Styles/texts';
 
-const Body = styled.body`
-  padding-top: 60px;
-  padding-bottom: 60px;
+const CursosMain = styled(BasicMain)`
   background-color: var(--g10);
 `;
 
-const MainCursos = styled.div`
-  display: grid;
-  width: 80%;
-  margin: 0 auto;
-  gap: 20px;
+const CursosContent = styled(BasicContent)`
   grid-template-columns: 6fr 1fr 5fr;
   grid-template-areas:
-  "text sp img";
+  "text space img";
   align-items: end;
 `;
-// const H1 = styled.h1`
-//     color: var(--g11);
-//     font-size: 96px;
-//     font-family: 'Cormorant SC', serif;
-//     font-weight: 300;
-// `;
 
 const Text = styled.div`
     grid-area: text;
@@ -37,10 +26,10 @@ const Text = styled.div`
     }
 `;
 
-const St = styled.strong`
-    font-weight: 700;
-    color: var(--g1);
-`;
+// const St = styled.strong`
+//     font-weight: 700;
+//     color: var(--g1);
+// `;
 
 const Img = styled.div`
 grid-area: img;
@@ -73,10 +62,10 @@ const Button = styled.div`
 
 export default function Cursos() {
   return (
-    <Body>
-      <MainCursos>
+    <CursosMain>
+      <CursosContent>
         <Text>
-          <Title color="g11" size="96">
+          <Title type="Header">
             Cursos
           </Title>
           <p>
@@ -94,7 +83,7 @@ export default function Cursos() {
           <img src={hathaImg} alt="hatha" />
           <div />
         </Img>
-      </MainCursos>
-    </Body>
+      </CursosContent>
+    </CursosMain>
   );
 }
