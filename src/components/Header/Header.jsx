@@ -19,12 +19,11 @@ export default function Header() {
           <HomeLink to="/">
             <img src={logoG} alt="logo gold" />
           </HomeLink>
-          {/* <Title color="g6" size="32" fw="300">Mente de Yoga</Title> */}
           <Title type="Header">Mente de Yoga</Title>
         </LogoNome>
         <Menu>
           <StLink to="/cursos">CURSOS</StLink>
-          <StLink to="/treinamentos">TREINAMENTOS</StLink>
+          {/* <StLink to="/treinamentos">TREINAMENTOS</StLink> */}
           <StLink to="/artigos">ARTIGOS</StLink>
           <StLink to="/sobre">SOBRE</StLink>
         </Menu>

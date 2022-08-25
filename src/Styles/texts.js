@@ -17,12 +17,14 @@ export const Title = styled.p`
   font-family: 'Cormorant SC', serif;
   ${(props) => props.type === 'Header' && typo(32, 300, 'g6')}
   ${(props) => props.type === 'Hero' && typo(48, 100, 'g2')}
+  ${(props) => props.type === 'Course' && typo(48, 100, 'g8')}
 `;
 
 export const P = styled.p`
     font-family: 'Open Sans', sans-serif;
     ${(props) => props.type === 'Header' && typo(32, 300, 'g6')}
     ${(props) => props.type === 'Hero' && typo(20, 300, 'g6', null, 1.5)}
+    ${(props) => props.type === 'Course' && typo(20, 300, 'g5', null, 1.5)}
 `;
 
 export const St = styled.strong`

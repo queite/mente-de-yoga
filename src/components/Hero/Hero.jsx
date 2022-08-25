@@ -1,26 +1,32 @@
 /* eslint-disable max-len */
 import React from 'react';
-import imgTomas from '../../img/TomasPe.jpg';
+// import imgTomas from '../../img/TomasPe.jpg';
 import {
-  GridP, Img, HeroMain, HeroContent,
+  HeroMain, HeroContent,
 } from './Hero.styles';
-import { Title, P, St } from '../../Styles/texts';
+// import { Title, P, St } from '../../Styles/texts';
+import imagesHero from '../../data/imagesHero';
+
+// console.log(imagesHero);
+const num = Math.floor(Math.random() * (6));
+const image = Object.values(imagesHero)[num];
+// console.log(image);
 
 export default function Hero() {
   return (
-    <HeroMain>
+    <HeroMain image={image}>
       <HeroContent>
-        <Img>
+        {/* <Img>
           <img src={imgTomas} alt="tomas em janusirshasana" />
-        </Img>
-        <GridP>
+        </Img> */}
+        {/* <GridP>
           <Title type="Hero">Tomas Breuckmann</Title>
           <P type="Hero">
             Começou seus estudos da tradição védica através do
             <St> Yoga </St>
             em 2011 e desde então vem se dedicando ao aprofundamento teórico e prático desta tradição.
           </P>
-        </GridP>
+        </GridP> */}
       </HeroContent>
     </HeroMain>
   );

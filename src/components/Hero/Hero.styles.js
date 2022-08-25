@@ -1,19 +1,26 @@
 import styled from 'styled-components';
 import logoB from '../../img/LogoYogaBlack.png';
+// import yogaImage from '../../img/uns/yoga7.jpg';
 import { BasicMain, BasicContent } from '../../Styles/Generals';
 
 export const HeroMain = styled(BasicMain)`
-  background-image: url(${logoB});
+  /* background-image: url(${logoB}); */
+  background-image: url(${((props) => props.image)});
   background-repeat: no-repeat;
-  background-position: 150% 50%;
-  background-size: 900px;
+  /* background-position-y: -150px; */
+  background-size: cover;
+  background-position: center;
+  /* background-size: 100%; */
+  filter: grayscale(1);
+  opacity: 90;
   `;
 
 export const HeroContent = styled(BasicContent)`
-  grid-template-columns: 3fr 8fr;
+  grid-template-columns: 7fr 1fr;
   grid-template-areas: 
-  "img text";
+  "text img";
   align-items: end;
+  height: 350px;
 `;
 
 export const Img = styled.div`
