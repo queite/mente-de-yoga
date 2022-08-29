@@ -25,6 +25,7 @@ export default function Header() {
           <StLink to="/cursos">CURSOS</StLink>
           {/* <StLink to="/treinamentos">TREINAMENTOS</StLink> */}
           <StLink to="/artigos">ARTIGOS</StLink>
+          <StLink to="/alunos">ALUNOS</StLink>
           <StLink to="/sobre">SOBRE</StLink>
         </Menu>
       </ContentHeader>

@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { BasicLink } from '../../Styles/Generals';
-import Card from './CardComponent.styles';
 import { Title } from '../../Styles/texts';
+import { Card, Par, Button } from './CardComponent.styles';
 
-export default function CardComponent({ title }) {
+export default function CardComponent({ title, comentary }) {
+  const comentarySmall = comentary.substring(0, 290).concat(' ', '...');
   return (
   // <BasicLink to={`./${id}`}>
     <Card>
-      <div />
-      {/* <img src={img} alt={nome} /> */}
-      <Title type="Hero">{title}</Title>
+      <Title type="Card">{title}</Title>
+      <Par type="Card">{comentarySmall}</Par>
+      <Button type="button">Leia Mais ...</Button>
     </Card>
   // </BasicLink>
 
@@ -19,6 +19,5 @@ export default function CardComponent({ title }) {
 
 CardComponent.propTypes = {
   title: PropTypes.string.isRequired,
-  // img: PropTypes.string.isRequired,
-  // id: PropTypes.number.isRequired,
+  comentary: PropTypes.string.isRequired,
 };

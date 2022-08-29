@@ -8,6 +8,6 @@ export const MainArtigos = styled(BasicMain)`
 
 export const ContentArtigos = styled(BasicContent)`
   /* background-color: blue; */
-  grid-template-columns: 1fr 1fr 1fr;
-  border: 1px solid red;
+  grid-template-columns: 1fr 1fr;
+  /* border: 1px solid red; */
  `;

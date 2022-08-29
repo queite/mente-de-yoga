@@ -6,6 +6,8 @@ import Artigos from './pages/Artigos';
 import Treinamentos from './pages/Treinamentos';
 import Sobre from './pages/Sobre';
 import Global from './Styles/Global';
+import Alunos from './pages/Alunos';
+// import AdminConfigurations from './pages/AdminConfigurations';
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         <Route path="/artigos" element={<Artigos />} />
         <Route path="/treinamentos" element={<Treinamentos />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/alunos" element={<Alunos />} />
+        {/* <Route path="/alunos/:id" element={<AlunosPage />} /> */}
+        {/* <Route path="/admin_configurations" element={<AdminConfigurations />} /> */}
         <Route exact path="/" element={<Home />} />
       </Routes>
     </div>
