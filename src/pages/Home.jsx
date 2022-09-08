@@ -5,6 +5,7 @@ import Hero from '../components/Hero/Hero';
 import Cursos from '../components/Course/Cursos';
 // import Treinamento from '../components/Treinamento';
 import Artigos from '../components/Artigos/Artigos';
+import Carousel from '../components/Carousel/Carousel';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Cursos />
       {/* <Treinamento /> */}
       <Artigos />
+      <Carousel />
       <Footer position="absolute" />
     </div>
   );

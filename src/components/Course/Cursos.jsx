@@ -1,12 +1,17 @@
 /* eslint-disable max-len */
 import React from 'react';
-import hathaImg from '../../img/uns/yoga4.jpg';
+import hathaImg from '../../data/imagesHero';
 import { Title, P, St } from '../../Styles/texts';
 import {
   CursosMain, CursosContent, Text, Img, Button,
 } from './Course.styles';
 
 export default function Cursos() {
+  const getImage = () => {
+    const num = Math.floor(Math.random() * (6));
+    const image = Object.values(hathaImg)[num];
+    return image;
+  };
   return (
     <CursosMain>
       <CursosContent>
@@ -26,7 +31,7 @@ export default function Cursos() {
           <Button>SAIBA MAIS . . .</Button>
         </Text>
         <Img>
-          <img src={hathaImg} alt="hatha" />
+          <img src={getImage()} alt="hatha" />
           <div />
         </Img>
       </CursosContent>

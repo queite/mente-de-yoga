@@ -3,7 +3,7 @@ import { BasicMain, BasicContent } from '../../Styles/Generals';
 // import CardComponent from '../Cards/CardComponent';
 
 export const MainArtigos = styled(BasicMain)`
-  background-color: var(--g3);
+  background-color: var(--g1);
   `;
 
 export const ContentArtigos = styled(BasicContent)`

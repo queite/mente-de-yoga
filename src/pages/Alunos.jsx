@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import styled from 'styled-components';
+import logo from '../img/LogoYogaBlack.png';
 
 const Div = styled.div`
    display: flex;
@@ -8,6 +9,10 @@ const Div = styled.div`
    align-items: center;
    height: 100vh;
    color: var(--g5);
+   background-image: url(${logo});
+   background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 500px;
 `;
 
 const Form = styled.form`
@@ -17,10 +22,18 @@ const Form = styled.form`
     background-color: var(--g10);
     border-radius: 4px;
     padding: 40px;
-    gap: 4px;
+    gap: 8px;
     input {
         margin-left: 8px;
         padding: 4px;
+    }
+    button {
+      padding: 12px 24px;
+      color: var(--d7);
+      border: 1px solid var(--g1);
+      border-radius: 4px;
+      cursor: pointer;
+      text-transform: uppercase;
     }
 `;
 

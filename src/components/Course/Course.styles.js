@@ -20,6 +20,7 @@ export const Img = styled.div`
 grid-area: img;
 position: relative;
     img {
+        filter: grayscale(1);
         width: 460px;
         /* position: relative; */
     }
