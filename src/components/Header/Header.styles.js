@@ -47,10 +47,12 @@ export const Menu = styled.div`
 // `;
 
 export const StLink = styled(BasicLink)`
-  color: var(--g5);
-  border-bottom: 1px solid var(--g11);
+  /* color: red; */
+  color: ${(props) => props.theme.general.links};
+  border-bottom: 1px solid;
+  border-color: ${(props) => props.theme.general.borderLinks};
   &:hover{
-    border-bottom: 1px solid var(--d4);
+    border-bottom: 2px solid var(--d4);
   }
 `;
 

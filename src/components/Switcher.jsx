@@ -28,10 +28,10 @@ function Switcher() {
         height={12}
         width={32}
         handleDiameter={16}
-        offColor="#777"
+        offColor="#999"
         onColor="#777"
-        //   onHandleColor={ changeThemeButton.color }
-        //   offHandleColor={ changeThemeButton.color }
+        onHandleColor="#ddd"
+        offHandleColor="#222"
       />
     </Div>
   );
