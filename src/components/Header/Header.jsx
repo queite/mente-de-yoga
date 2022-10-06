@@ -9,7 +9,7 @@ import {
 } from './Header.styles';
 import TitleH from '../TitleH';
 import logoG from '../../img/LogoYogaGold.png';
-import { headerDark } from './HeaderInfos';
+// import { headerDark } from './HeaderInfos';
 
 export default function Header() {
   return (
@@ -19,7 +19,7 @@ export default function Header() {
           <HomeLink to="/">
             <img src={logoG} alt="logo gold" />
           </HomeLink>
-          <TitleH infos={headerDark} />
+          <TitleH infos="header" />
         </LogoNome>
         <Menu>
           <StLink to="/cursos">CURSOS</StLink>

@@ -1,4 +1,5 @@
 export const headerLight = {
+  component: 'header',
   title: 'Mente de Yoga',
   color: 'var(--g3)', // font color
   background: 'var(--g11)', // background-color
@@ -11,6 +12,7 @@ export const headerLight = {
 };
 
 export const headerDark = {
+  component: 'header',
   title: 'Mente de Yoga',
   color: 'var(--g3)', // font color
   background: 'var(--g11)', // background-color
