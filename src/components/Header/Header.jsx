@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import {
   MainHeader,
   LogoNome,
@@ -8,8 +7,9 @@ import {
   StLink,
   HomeLink,
 } from './Header.styles';
-import { Title } from '../../Styles/texts';
+import TitleH from '../TitleH';
 import logoG from '../../img/LogoYogaGold.png';
+import { headerDark } from './HeaderInfos';
 
 export default function Header() {
   return (
@@ -19,7 +19,7 @@ export default function Header() {
           <HomeLink to="/">
             <img src={logoG} alt="logo gold" />
           </HomeLink>
-          <Title type="Header">Mente de Yoga</Title>
+          <TitleH infos={headerDark} />
         </LogoNome>
         <Menu>
           <StLink to="/cursos">CURSOS</StLink>

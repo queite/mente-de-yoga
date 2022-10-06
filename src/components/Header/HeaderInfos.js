@@ -1,0 +1,23 @@
+export const headerLight = {
+  title: 'Mente de Yoga',
+  color: 'var(--g3)', // font color
+  background: 'var(--g11)', // background-color
+  strong: 'var(--g1)', // contrast color
+  text: {
+    fontSize: 32,
+    fontWeight: 300,
+    fontColor: 'g4',
+  },
+};
+
+export const headerDark = {
+  title: 'Mente de Yoga',
+  color: 'var(--g3)', // font color
+  background: 'var(--g11)', // background-color
+  strong: 'var(--g1)', // contrast color
+  text: {
+    fontSize: 32,
+    fontWeight: 300,
+    fontColor: 'g4',
+  },
+};

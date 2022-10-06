@@ -57,7 +57,9 @@ const Global = createGlobalStyle`
       --wid: 100vw; // largura
       --hei: 100vh; // altura  
 
-      background-color: var(--g12);
+      background-color: ${(props) => props.theme.general.background};
+      color: ${(props) => props.theme.general.color};
+
     }
     // Fontes
     @font-face {

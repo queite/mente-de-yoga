@@ -14,9 +14,19 @@ function typo(fontSize, fontWeight, fontColor, backColor, lineHeight, paddingBot
   return ret;
 }
 
+function typos(fontSize, fontWeight, fontColor) {
+  const ret = css`
+  /* font-size : ${fontSize}px; */
+  font-size: ${(props) => props.theme.header.title.fontSize};
+  font-weight: ${fontWeight};
+  color: var(--${fontColor});
+  `;
+  return ret;
+}
+
 export const Title = styled.p`
   font-family: 'Cormorant SC', serif;
-  ${(props) => props.type === 'Header' && typo(32, 300, 'g6')}
+  ${(props) => props.type === 'Header' && typos(32, 300, 'g4')}
   ${(props) => props.type === 'Hero' && typo(48, 100, 'g2')}
   ${(props) => props.type === 'Course' && typo(48, 100, 'g6', null, null, 20)}
   ${(props) => props.type === 'Article' && typo(48, 100, 'g7', null, null, 20)}
@@ -33,5 +43,5 @@ export const P = styled.p`
 
 export const St = styled.strong`
     font-weight: 700;
-    color: var(--g1);
+    color: ${(props) => props.theme.general.strong};
 `;

@@ -6,8 +6,7 @@ export const BasicLink = styled(Link)`
 `;
 
 export const BasicMain = styled.main`
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 `;
 
 export const BasicContent = styled.div`

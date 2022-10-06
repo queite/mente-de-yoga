@@ -1,7 +1,7 @@
 import React from 'react';
 // import CardComponent from '../components/CardComponent';
-import Footer from '../components/Footer';
-import Header from '../components/Header/Header';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header/Header';
 // import servicos from '../data/servicos';
 // import { Body } from '../Styles/Generals';
 
