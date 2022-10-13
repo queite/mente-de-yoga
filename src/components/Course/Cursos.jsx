@@ -1,10 +1,11 @@
 /* eslint-disable max-len */
 import React from 'react';
 import hathaImg from '../../data/imagesHero';
-import { Title, P, St } from '../../Styles/texts';
+import { P, St } from '../../Styles/texts';
 import {
   CursosMain, CursosContent, Text, Img, Button,
 } from './Course.styles';
+import Fonts from '../General/Fonts';
 
 export default function Cursos() {
   const getImage = () => {
@@ -16,10 +17,8 @@ export default function Cursos() {
     <CursosMain>
       <CursosContent>
         <Text>
-          <Title type="Course">
-            Cursos
-          </Title>
-          <P type="Course">
+          <Fonts infos="course" type="title" />
+          <P infos="course" type="p">
             Com abordagem no
             <St> Haṭha Yoga </St>
             o curso de

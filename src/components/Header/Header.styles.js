@@ -49,7 +49,7 @@ export const Menu = styled.div`
 export const StLink = styled(BasicLink)`
   /* color: red; */
   color: ${(props) => props.theme.general.links};
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   border-color: ${(props) => props.theme.general.borderLinks};
   &:hover{
     border-bottom: 2px solid var(--d4);
@@ -58,4 +58,12 @@ export const StLink = styled(BasicLink)`
 
 export const HomeLink = styled(BasicLink)`
   color: var(--g5);
+  `;
+
+export const Img = styled.div`
+  background-image: url(${(props) => props.theme.header.logo});
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
 `;

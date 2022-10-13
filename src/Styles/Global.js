@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import deva from './fonts/deva.ttf';
+// import deva from './fonts/deva.ttf';
 
 const Global = createGlobalStyle`
   * {
@@ -57,17 +57,12 @@ const Global = createGlobalStyle`
       --wid: 100vw; // largura
       --hei: 100vh; // altura  
 
-      background-color: ${(props) => props.theme.general.background};
-      color: ${(props) => props.theme.general.color};
+      /* background-color: ${(props) => props.theme.general.background};
+      color: ${(props) => props.theme.general.color}; */
 
     }
     // Fontes
-    @font-face {
-      font-family: 'deva';
-      src: url(${deva}) format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+
 
 `;
 

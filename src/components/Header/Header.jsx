@@ -6,10 +6,12 @@ import {
   Menu,
   StLink,
   HomeLink,
+  Img,
 } from './Header.styles';
-import TitleH from '../TitleH';
-import logoG from '../../img/LogoYogaGold.png';
+// import Fonts from '../General/Fonts';
+// import logoG from '../../img/LogoYogaGold.png';
 // import { headerDark } from './HeaderInfos';
+import { Title } from '../../Styles/texts';
 
 export default function Header() {
   return (
@@ -17,9 +19,10 @@ export default function Header() {
       <ContentHeader>
         <LogoNome>
           <HomeLink to="/">
-            <img src={logoG} alt="logo gold" />
+            {/* <img src="" alt="logo gold" /> */}
+            <Img />
           </HomeLink>
-          <TitleH infos="header" />
+          <Title infos="header">MENTE DE YOGA</Title>
         </LogoNome>
         <Menu>
           <StLink to="/cursos">CURSOS</StLink>
