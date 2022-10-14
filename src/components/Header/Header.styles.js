@@ -9,6 +9,7 @@ export const MainHeader = styled(BasicMain)`
     /* width: 100%; */
     /* z-index: 3; */
     padding: 0;
+    /* border-bottom: 1px solid var(--d1); */
 `;
 
 export const ContentHeader = styled(BasicContent)`

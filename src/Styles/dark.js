@@ -24,7 +24,7 @@ export default {
   course: {
     background: 'var(--g11)',
     color: 'var(--g4)',
-    strong: 'var(--g1)',
+    strong: 'var(--g12)',
     titleFonts: {
       fontSize: 48,
       fontWeight: 100,

@@ -3,35 +3,30 @@
 import { useContext } from 'react';
 import styled, { css, ThemeContext } from 'styled-components';
 
-function getContextInfos(infos) {
+function getContextInfos(infos, type) {
   const allInfos = useContext(ThemeContext);
   const componentInfos = Object.entries(allInfos).find((pair) => pair[0] === infos);
   const info = componentInfos[1];
-  return info;
+  if (type === 'strong') {
+    const data = info;
+    return data;
+  }
+  const data = type === 'title' ? info.titleFonts : info.p;
+  return data;
 }
 
-function typoTitle(infos) {
-  const info = getContextInfos(infos);
+function fontProperties(infos, type) {
+  const data = getContextInfos(infos, type);
+  const {
+    fontSize, fontWeight, fontColor, backColor, lineHeight, paddingBottom,
+  } = data;
   const ret = css`
-  font-size : ${info.titleFonts.fontSize}px;
-  font-weight: ${info.titleFonts.fontWeight};
-  color: ${info.titleFonts.fontColor};
-  background-color: ${info.titleFonts.backColor || null};
-  line-height: ${info.titleFonts.lineHeight || null};
-  padding-bottom: ${info.titleFonts.paddingBottom}px;
-  `;
-  return ret;
-}
-
-function typoP(infos) {
-  const info = getContextInfos(infos);
-  const ret = css`
-  font-size : ${info.p.fontSize}px;
-  font-weight: ${info.p.fontWeight};
-  color: ${info.p.fontColor};
-  background-color: ${info.p.backColor || null};
-  line-height: ${info.p.lineHeight || null};
-  padding-bottom: ${info.p.paddingBottom}px;
+  font-size : ${fontSize}px;
+  font-weight: ${fontWeight};
+  color: ${fontColor};
+  background-color: ${backColor || null};
+  line-height: ${lineHeight || null};
+  padding-bottom: ${paddingBottom}px;
   `;
   return ret;
 }
@@ -46,15 +41,15 @@ function typoStrong(infos) {
 
 export const Title = styled.p`
   font-family: 'Cormorant SC', serif;
-  ${(props) => typoTitle(props.infos)}
+  ${(props) => fontProperties(props.infos, 'title')}
 `;
 
 export const P = styled.p`
     font-family: 'Open Sans', sans-serif;
-    ${(props) => typoP(props.infos)}
+    ${(props) => fontProperties(props.infos, 'p')}
 `;
 
 export const St = styled.strong`
     font-weight: 700;
-    ${(props) => typoStrong(props.infos)}
+    ${(props) => typoStrong(props.infos, 'strong')}
 `;

@@ -34,7 +34,7 @@ export default {
     p: {
       fontSize: 24,
       fontWeight: 300,
-      fontColor: 'var(--g10)',
+      fontColor: 'var(--g9)',
     },
   },
 };
