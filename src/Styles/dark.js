@@ -1,5 +1,5 @@
 // import { headerDark } from '../components/Header/HeaderInfos';
-import { courseDark } from '../components/Course/CourseInfos';
+// import { courseDark } from '../components/Course/CourseInfos';
 import logoGold from '../img/LogoYogaGold.png';
 
 export default {
@@ -12,15 +12,29 @@ export default {
     borderLinks: 'var(--g11)',
   },
   header: {
-    title: 'Mente de Yoga',
     background: 'var(--g11)',
     color: 'var(--g3)',
     logo: logoGold,
     titleFonts: {
       fontSize: 32,
       fontWeight: 300,
-      fontColor: 'var(--g12)',
+      fontColor: 'var(--g3)',
     },
   },
-  course: courseDark,
+  course: {
+    background: 'var(--g11)',
+    color: 'var(--g4)',
+    strong: 'var(--g1)',
+    titleFonts: {
+      fontSize: 48,
+      fontWeight: 100,
+      fontColor: 'var(--g5)',
+      paddingBottom: 20,
+    },
+    p: {
+      fontSize: 24,
+      fontWeight: 300,
+      fontColor: 'var(--g4)',
+    },
+  },
 };

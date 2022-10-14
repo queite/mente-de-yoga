@@ -1,11 +1,10 @@
 /* eslint-disable max-len */
 import React from 'react';
 import hathaImg from '../../data/imagesHero';
-import { P, St } from '../../Styles/texts';
+import { P, St, Title } from '../../Styles/texts';
 import {
   CursosMain, CursosContent, Text, Img, Button,
 } from './Course.styles';
-import Fonts from '../General/Fonts';
 
 export default function Cursos() {
   const getImage = () => {
@@ -13,18 +12,19 @@ export default function Cursos() {
     const image = Object.values(hathaImg)[num];
     return image;
   };
+  const c = 'course';
   return (
     <CursosMain>
       <CursosContent>
         <Text>
-          <Fonts infos="course" type="title" />
-          <P infos="course" type="p">
+          <Title infos={c}>CURSOS</Title>
+          <P infos={c}>
             Com abordagem no
-            <St> Haṭha Yoga </St>
+            <St infos={c}> Haṭha Yoga </St>
             o curso de
-            <St> Formação de Instrutores </St>
+            <St infos={c}> Formação de Instrutores </St>
             conta com uma carga horária de
-            <St> 200h </St>
+            <St infos={c}> 200h </St>
             e destina-se a toda pessoa interessada em conhecer mais à si mesma, e também em conhecer e ensinar esta tradição.
           </P>
           <Button>SAIBA MAIS . . .</Button>

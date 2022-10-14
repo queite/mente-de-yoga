@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { BasicMain, BasicContent } from '../../Styles/Generals';
 
 export const CursosMain = styled(BasicMain)`
-  background-color: var(--g10);
+  background-color: ${(props) => props.theme.course.background};
 `;
 
 export const CursosContent = styled(BasicContent)`
@@ -38,7 +38,7 @@ position: relative;
 export const Button = styled.div`
     margin-top: 24px;
     font-family: 'Open Sans', sans-serif;
-    color: var(--g2);
+    color: ${(props) => props.theme.course.color};
     border: 1px solid var(--d3);
     width: 160px;
     padding: 8px 0;
