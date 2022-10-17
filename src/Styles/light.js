@@ -7,9 +7,12 @@ export default {
   general: {
     color: 'var(--g3)',
     background: 'var(--g3)',
-    strong: 'var(--g2)',
+    strong: 'var(--g8)',
     links: 'var(--g12)',
     borderLinks: 'var(--g3)',
+    button: {
+      borderRadius: 4,
+    },
   },
   header: {
     background: 'var(--g3)',
@@ -28,13 +31,30 @@ export default {
     titleFonts: {
       fontSize: 48,
       fontWeight: 100,
-      fontColor: 'var(--g10)',
+      fontColor: 'var(--g9)',
       paddingBottom: 20,
     },
     p: {
       fontSize: 24,
       fontWeight: 300,
       fontColor: 'var(--g9)',
+    },
+    button: {
+      // fontSize: 16,
+      fontColor: 'var(--g9)',
+      backColor: 'var(--g3)',
+      borderColor: 'var(--d3)',
+      margin: [24, 0, 0, 0],
+    },
+  },
+  footer: {
+    background: 'var(--g4)',
+    color: 'var(--g12)',
+    logo: logoBlack,
+    titleFonts: {
+      fontSize: 32,
+      fontWeight: 300,
+      fontColor: 'var(--g12)',
     },
   },
 };

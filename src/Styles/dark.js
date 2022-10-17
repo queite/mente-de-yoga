@@ -10,6 +10,9 @@ export default {
     strong: 'var(--g2)',
     links: 'var(--g3)',
     borderLinks: 'var(--g11)',
+    button: {
+      borderRadius: 4,
+    },
   },
   header: {
     background: 'var(--g11)',
@@ -24,17 +27,34 @@ export default {
   course: {
     background: 'var(--g11)',
     color: 'var(--g4)',
-    strong: 'var(--g12)',
+    strong: 'var(--g1)',
     titleFonts: {
       fontSize: 48,
       fontWeight: 100,
-      fontColor: 'var(--g5)',
+      fontColor: 'var(--g4)',
       paddingBottom: 20,
     },
     p: {
       fontSize: 24,
       fontWeight: 300,
       fontColor: 'var(--g4)',
+    },
+    button: {
+      // fontSize: 16,
+      fontColor: 'var(--g4)',
+      backColor: 'var(--g11)',
+      borderColor: 'var(--d3)',
+      margin: [24, 0, 0, 0],
+    },
+  },
+  footer: {
+    background: 'var(--g12)',
+    color: 'var(--g12)',
+    logo: logoGold,
+    titleFonts: {
+      fontSize: 32,
+      fontWeight: 300,
+      fontColor: 'var(--g12)',
     },
   },
 };

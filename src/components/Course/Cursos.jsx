@@ -1,12 +1,15 @@
 /* eslint-disable max-len */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import hathaImg from '../../data/imagesHero';
+import { Button } from '../../Styles/buttons';
 import { P, St, Title } from '../../Styles/texts';
 import {
-  CursosMain, CursosContent, Text, Img, Button,
+  CursosMain, CursosContent, Text, Img,
 } from './Course.styles';
 
 export default function Cursos() {
+  const navigate = useNavigate();
   const getImage = () => {
     const num = Math.floor(Math.random() * (6));
     const image = Object.values(hathaImg)[num];
@@ -27,7 +30,12 @@ export default function Cursos() {
             <St infos={c}> 200h </St>
             e destina-se a toda pessoa interessada em conhecer mais à si mesma, e também em conhecer e ensinar esta tradição.
           </P>
-          <Button>SAIBA MAIS . . .</Button>
+          <Button
+            infos={c}
+            onClick={() => navigate('/cursos')}
+          >
+            Saiba mais ...
+          </Button>
         </Text>
         <Img>
           <img src={getImage()} alt="hatha" />

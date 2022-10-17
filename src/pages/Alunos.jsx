@@ -1,18 +1,14 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../img/LogoYogaBlack.png';
+// import logo from '../img/LogoYogaBlack.png';
 
 const Div = styled.div`
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   color: var(--g5);
-   background-image: url(${logo});
-   background-repeat: no-repeat;
-  background-size: 800px;
-  background-position: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--g5);
 `;
 
 const Form = styled.form`
@@ -46,10 +42,10 @@ export default function AdminLogin() {
   return (
     <Div>
       <Form
-        action="/admin_configuration" // para onde é enviada a informação no servidor
-        method="post"
+        action="/adminconfigurations" // para onde é enviada a informação no servidor
+        // method="post"
         // target="_blank"
-        target="/admin_configuration"
+        target="/adminconfigurations"
         // onClick={(event) => handleSubmit(event)}
       >
         <label htmlFor="fEmail">
@@ -69,7 +65,7 @@ export default function AdminLogin() {
         <button
           type="submit"
         >
-          Envie
+          Entrar
         </button>
       </Form>
     </Div>

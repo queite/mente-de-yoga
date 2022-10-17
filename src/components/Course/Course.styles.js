@@ -34,14 +34,3 @@ position: relative;
         left: -5px;
     }
 `;
-
-export const Button = styled.div`
-    margin-top: 24px;
-    font-family: 'Open Sans', sans-serif;
-    color: ${(props) => props.theme.course.color};
-    border: 1px solid var(--d3);
-    width: 160px;
-    padding: 8px 0;
-    text-align: center;
-    border-radius: 4px;
-`;

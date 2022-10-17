@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const MainFooter = styled.footer`
   /* width: var(--wid); */
   min-height: 60px;
-  background-color: var(--g11);
+  background-color: ${(props) => props.theme.footer.background};
   text-align: right;
   display: flex;
   justify-content: flex-end;

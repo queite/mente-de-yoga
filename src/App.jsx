@@ -11,7 +11,7 @@ import Alunos from './pages/Alunos';
 import dark from './Styles/dark';
 import light from './Styles/light';
 import Context from './context/context';
-// import AdminConfigurations from './pages/AdminConfigurations';
+import AdminConfigurations from './pages/AdminConfigurations/AdminConfigurations';
 
 function App() {
   const { theme } = useContext(Context);
@@ -26,7 +26,7 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/alunos" element={<Alunos />} />
           {/* <Route path="/alunos/:id" element={<AlunosPage />} /> */}
-          {/* <Route path="/admin_configurations" element={<AdminConfigurations />} /> */}
+          <Route path="/adminconfigurations" element={<AdminConfigurations />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
       </ThemeProvider>

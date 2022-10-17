@@ -31,10 +31,10 @@ function fontProperties(infos, type) {
   return ret;
 }
 
-function typoStrong(infos) {
-  const info = getContextInfos(infos);
+function typoStrong(infos, type) {
+  const data = getContextInfos(infos, type);
   const ret = css`
-  color: ${info.strong};
+  color: ${data.strong};
   `;
   return ret;
 }
