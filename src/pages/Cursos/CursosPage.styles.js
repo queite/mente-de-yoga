@@ -1,21 +1,25 @@
 import styled from 'styled-components';
-import { BasicMain, BasicContent } from '../../Styles/Generals';
+import { BasicContent } from '../../Styles/Generals';
 
-export const CursosMain = styled(BasicMain)`
-  background-color: ${(props) => props.theme.course.background};
+export const CursosMain = styled.div`
+  background-color: ${(props) => props.theme.cursoPage.background};
 `;
 
 export const TitleContent = styled(BasicContent)`
 `;
 
 export const CursosContent = styled(BasicContent)`
-  grid-template-columns: 5fr 6fr;
+background-color: ${(props) => props.theme.card.background};
+  grid-template-columns: 6fr 1fr 3fr;
   grid-template-areas:
-  "img text";
+  "text space img";
   align-items: end;
   margin: 40px auto;
+  /* background-color: red; */
   padding: 20px;
   border-radius: 8px;
+  /* -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75); */
+/* -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75); */
   box-shadow: 4px 4px 12px 4px rgba(0,0,0,0.75);
 `;
 
@@ -28,7 +32,7 @@ grid-area: img;
 position: relative;
     img {
         filter: grayscale(1);
-        width: 100%;
+        width: 360px;
         /* height: 300px */
         /* position: relative; */
     }

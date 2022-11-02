@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import styled from 'styled-components';
+import { Button } from '../Styles/buttons';
 // import logo from '../img/LogoYogaBlack.png';
 
 const Div = styled.div`
@@ -23,14 +24,6 @@ const Form = styled.form`
         margin-left: 8px;
         padding: 4px;
     }
-    button {
-      padding: 12px 24px;
-      color: var(--d7);
-      border: 1px solid var(--g1);
-      border-radius: 4px;
-      cursor: pointer;
-      text-transform: uppercase;
-    }
 `;
 
 // const handleSubmit = (event) => {
@@ -39,6 +32,7 @@ const Form = styled.form`
 // };
 
 export default function AdminLogin() {
+  const a = 'alunosPage';
   return (
     <Div>
       <Form
@@ -62,11 +56,12 @@ export default function AdminLogin() {
             name="fPassword"
           />
         </label>
-        <button
+        <Button
+          infos={a}
           type="submit"
         >
           Entrar
-        </button>
+        </Button>
       </Form>
     </Div>
   );

@@ -14,30 +14,62 @@ export default {
       borderRadius: 4,
     },
   },
+  card: {
+    color: 'var(--g3)',
+    background: 'var(--g2)',
+  },
   header: {
     background: 'var(--g3)',
     color: 'var(--g12)',
     logo: logoBlack,
-    titleFonts: {
-      fontSize: 32,
+    Hfonts: {
+      fontWeight: 100,
+      fontColor: 'var(--g9)',
+      paddingBottom: 0,
+    },
+    Pfonts: {
+      fontSize: 24,
       fontWeight: 300,
-      fontColor: 'var(--g12)',
+      fontColor: 'var(--g9)',
     },
   },
   course: {
     background: 'var(--g3)',
     color: 'var(--g12)',
     strong: 'var(--g12)',
-    titleFonts: {
-      fontSize: 48,
+    Hfonts: {
       fontWeight: 100,
       fontColor: 'var(--g9)',
       paddingBottom: 20,
     },
-    p: {
+    Pfonts: {
       fontSize: 24,
       fontWeight: 300,
       fontColor: 'var(--g9)',
+    },
+    button: {
+      // fontSize: 16,
+      fontColor: 'var(--g9)',
+      backColor: 'var(--g3)',
+      borderColor: 'var(--d3)',
+      margin: [24, 0, 0, 0],
+    },
+  },
+  formationComponent: {
+    background: 'var(--g3)',
+    color: 'var(--g12)',
+    strong: 'var(--g12)',
+    Hfonts: {
+      // fontSize: 48,
+      fontWeight: 100,
+      fontColor: 'var(--g9)',
+      paddingBottom: 20,
+    },
+    Pfonts: {
+      // fontSize: 48,
+      fontWeight: 100,
+      fontColor: 'var(--g9)',
+      paddingBottom: 20,
     },
     button: {
       // fontSize: 16,
@@ -55,6 +87,53 @@ export default {
       fontSize: 32,
       fontWeight: 300,
       fontColor: 'var(--g12)',
+    },
+  },
+  adminPageConfigs: {
+    background: 'var(--g4)',
+    color: 'var(--g12)',
+    button: {
+      // fontSize: 16,
+      fontColor: 'var(--g9)',
+      backColor: 'var(--g3)',
+      borderColor: 'var(--g3)',
+      margin: [0, 12, 0, 0],
+    },
+    p: {
+      fontSize: 24,
+      fontWeight: 300,
+      fontColor: 'var(--g9)',
+    },
+  },
+  alunosPage: {
+    button: {
+      // fontSize: 16,
+      fontColor: 'var(--g9)',
+      backColor: 'var(--g3)',
+      borderColor: 'var(--g3)',
+      margin: [0, 0, 0, 0],
+    },
+  },
+  cursoPage: {
+    background: 'var(--g3)',
+    color: 'var(--g12)',
+    strong: 'var(--g12)',
+    Hfonts: {
+      fontWeight: 100,
+      fontColor: 'var(--g9)',
+      paddingBottom: 20,
+    },
+    Pfonts: {
+      fontSize: 24,
+      fontWeight: 300,
+      fontColor: 'var(--g9)',
+    },
+    button: {
+      // fontSize: 16,
+      fontColor: 'var(--g9)',
+      backColor: 'var(--g3)',
+      borderColor: 'var(--d3)',
+      margin: [24, 0, 0, 0],
     },
   },
 };

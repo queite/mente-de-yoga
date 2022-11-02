@@ -3,13 +3,8 @@ import styled from 'styled-components';
 import { BasicLink, BasicMain, BasicContent } from '../../Styles/Generals';
 
 export const MainHeader = styled(BasicMain)`
-    /* background-color: var(--g11); */
     background-color: ${(props) => props.theme.header.background};
-    /* position: fixed; */
-    /* width: 100%; */
-    /* z-index: 3; */
-    padding: 0;
-    /* border-bottom: 1px solid var(--d1); */
+    padding: 0px;
 `;
 
 export const ContentHeader = styled(BasicContent)`
