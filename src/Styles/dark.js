@@ -17,6 +17,17 @@ export default {
   card: {
     color: 'var(--g10)',
     background: 'var(--g10)',
+    Hfonts: {
+      // fontSize: 48,
+      fontWeight: 100,
+      fontColor: 'var(--g4)',
+      paddingBottom: 20,
+    },
+    Pfonts: {
+      fontSize: 24,
+      fontWeight: 300,
+      fontColor: 'var(--g4)',
+    },
   },
   header: {
     background: 'var(--g11)',

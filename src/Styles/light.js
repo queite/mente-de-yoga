@@ -17,6 +17,16 @@ export default {
   card: {
     color: 'var(--g3)',
     background: 'var(--g2)',
+    Hfonts: {
+      fontWeight: 100,
+      fontColor: 'var(--g9)',
+      paddingBottom: 20,
+    },
+    Pfonts: {
+      fontSize: 24,
+      fontWeight: 300,
+      fontColor: 'var(--g9)',
+    },
   },
   header: {
     background: 'var(--g3)',
@@ -53,6 +63,22 @@ export default {
       backColor: 'var(--g3)',
       borderColor: 'var(--d3)',
       margin: [24, 0, 0, 0],
+    },
+  },
+  cursoInstrutores: {
+    background: 'var(--g3)',
+    color: 'var(--g12)',
+    strong: 'var(--g12)',
+    Hfonts: {
+      fontWeight: 100,
+      fontColor: 'var(--g9)',
+      paddingBottom: 12,
+    },
+    Pfonts: {
+      fontSize: 24,
+      fontWeight: 300,
+      fontColor: 'var(--g9)',
+      paddingBottom: 8,
     },
   },
   formationComponent: {

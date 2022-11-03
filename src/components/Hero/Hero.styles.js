@@ -12,5 +12,5 @@ export const HeroMain = styled(BasicMain)`
   `;
 
 export const HeroContent = styled(BasicContent)`
-  height: 350px;
+  height: 300px;
 `;

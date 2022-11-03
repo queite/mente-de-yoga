@@ -2,7 +2,6 @@
 /* eslint-disable import/prefer-default-export */
 import { useContext } from 'react';
 import styled, { css, ThemeContext } from 'styled-components';
-// import titles from "../Styles/titles";
 
 function getContextInfos(infos, type) {
   const allInfos = useContext(ThemeContext);
@@ -13,23 +12,8 @@ function getContextInfos(infos, type) {
     return data;
   }
   const data = type === 'H' ? info.Hfonts : info.Pfonts;
-  console.log('DATA', infos, type, data);
   return data;
 }
-
-// function fontProperties(infos, type) {
-//   const data = getContextInfos(infos, type);
-//   const {
-//     fontColor, backColor, lineHeight, paddingBottom,
-//   } = data;
-//   const ret = css`
-//   color: ${fontColor};
-//   background-color: ${backColor || null};
-//   line-height: ${lineHeight || null};
-//   padding-bottom: ${paddingBottom}px;
-//   `;
-//   return ret;
-// }
 
 function typoStrong(infos, type) {
   const data = getContextInfos(infos, type);
@@ -38,16 +22,6 @@ function typoStrong(infos, type) {
   `;
   return ret;
 }
-
-// export const Title = styled.p`
-//   font-family: 'Cormorant SC', serif;
-//   ${(props) => fontProperties(props.infos, 'title')}
-// `;
-
-// export const P = styled.p`
-//     font-family: 'Open Sans', sans-serif;
-//     ${(props) => fontProperties(props.infos, 'p')}
-// `;
 
 export const St = styled.strong`
     font-weight: 700;
@@ -69,26 +43,69 @@ function fontProp(infos, type) {
   return ret;
 }
 
+function detach() {
+  const ret = css`
+    border: 1px solid var(--d6);
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  `;
+  return ret;
+}
+
 export const H1 = styled.h1`
   font-family: 'Cormorant SC', serif;
   font-size: 48px;
   ${(props) => fontProp(props.infos, 'H')}
+  ${(props) => props.detach && detach()}
 `;
 
 export const P1 = styled.p`
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   ${(props) => fontProp(props.infos, 'P')}
+  ${(props) => props.detach && detach()}
 `;
 
 export const H2 = styled.h2`
   font-family: 'Cormorant SC', serif;
   font-size: 36px;
   ${(props) => fontProp(props.infos, 'H')}
+  ${(props) => props.detach && detach()}
 `;
 
 export const P2 = styled.p`
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   ${(props) => fontProp(props.infos, 'P')}
+  ${(props) => props.detach && detach()}
+`;
+
+export const H3 = styled.h3`
+  font-family: 'Cormorant SC', serif;
+  font-size: 28px;
+  ${(props) => fontProp(props.infos, 'H')}
+  ${(props) => props.detach && detach()}
+`;
+
+export const P3 = styled.p`
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  ${(props) => fontProp(props.infos, 'P')}
+  ${(props) => props.detach && detach()}
+`;
+
+export const Li = styled.li`
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  list-style-type: none;
+  ${(props) => fontProp(props.infos, 'P')}
+
+  /* &::before {
+    content: "o";
+    color: var(--d5);
+    display: inline-block;
+    width: 12px;
+    margin-left: -16px
+  } */
 `;
