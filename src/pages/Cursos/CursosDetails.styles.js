@@ -23,8 +23,19 @@ export const CursosContent = styled(BasicContent)`
   align-items: end;
   margin: 40px auto;
   list-style-position: outside;
-
 `;
+
+export const CursosContentAbout = styled(BasicContent)`
+/* background-color: ${(props) => props.theme.card.background}; */
+  /* grid-template-columns: 6fr 6fr;
+  grid-template-areas:
+  "img text"; */
+  /* background-color: var(--g3); */
+  align-items: end;
+  margin: 40px auto;
+  list-style-position: outside;
+`;
+
 export const GeneralInfos = styled.div`
   grid-area: text;
 `;

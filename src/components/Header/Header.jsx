@@ -12,13 +12,13 @@ import {
 // import logoG from '../../img/LogoYogaGold.png';
 // import { headerDark } from './HeaderInfos';
 import * as Text from '../../Styles/texts';
-import Switcher from '../Switcher';
+// import Switcher from '../Switcher';
 
 export default function Header() {
   const c = 'header';
   return (
     <MainHeader>
-      <Switcher />
+      {/* <Switcher /> */}
       <ContentHeader>
         <LogoNome>
           <HomeLink to="/">

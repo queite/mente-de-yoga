@@ -28,7 +28,7 @@ export const St = styled.strong`
     ${(props) => typoStrong(props.infos, 'strong')}
 `;
 
-function fontProp(infos, type) {
+function fontProp(infos, type) { // pagina , H ou P
   const data = getContextInfos(infos, type);
   const {
     fontColor, backColor, fontWeight, lineHeight, paddingBottom,
@@ -100,12 +100,4 @@ export const Li = styled.li`
   font-size: 16px;
   list-style-type: none;
   ${(props) => fontProp(props.infos, 'P')}
-
-  /* &::before {
-    content: "o";
-    color: var(--d5);
-    display: inline-block;
-    width: 12px;
-    margin-left: -16px
-  } */
 `;
