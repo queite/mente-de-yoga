@@ -46,7 +46,7 @@ export const StLink = styled(BasicLink)`
   /* color: red; */
   color: ${(props) => props.theme.general.links};
   border-bottom: 2px solid;
-  border-color: ${(props) => props.theme.general.borderLinks};
+  border-color: ${(props) => props.theme.header.background};
   &:hover{
     border-bottom: 2px solid var(--d4);
   }

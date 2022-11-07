@@ -95,6 +95,13 @@ export const P3 = styled.p`
   ${(props) => props.detach && detach()}
 `;
 
+export const H4 = styled.h3`
+  font-family: 'Cormorant SC', serif;
+  font-size: 20px;
+  ${(props) => fontProp(props.infos, 'H')}
+  ${(props) => props.detach && detach()}
+`;
+
 export const Li = styled.li`
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;

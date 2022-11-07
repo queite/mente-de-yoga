@@ -28,10 +28,10 @@ export default function Header() {
           <Text.H2 infos={c}>MENTE DE YOGA</Text.H2>
         </LogoNome>
         <Menu>
-          <StLink to="/cursos">CURSOS</StLink>
+          {/* <StLink to="/cursos">CURSOS</StLink> */}
           {/* <StLink to="/treinamentos">TREINAMENTOS</StLink> */}
-          <StLink to="/artigos">ARTIGOS</StLink>
-          <StLink to="/alunos">ALUNOS</StLink>
+          {/* <StLink to="/artigos">ARTIGOS</StLink> */}
+          {/* <StLink to="/alunos">ALUNOS</StLink> */}
           <StLink to="/sobre">SOBRE</StLink>
         </Menu>
       </ContentHeader>

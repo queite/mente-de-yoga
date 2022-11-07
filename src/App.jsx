@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 // import Home from './pages/Home/Home';
 // import Cursos from './pages/Cursos/Cursos';
-import CursosInstrutores from './pages/Cursos/CursosInstrutores';
+import CursosInstrutores from './pages/Cursos/Instrutores/CursosInstrutores';
 // import Artigos from './pages/Artigos';
 // import Treinamentos from './pages/Treinamentos';
 // import Sobre from './pages/Sobre';

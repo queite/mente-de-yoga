@@ -29,7 +29,7 @@ export default {
     },
   },
   header: {
-    background: 'var(--g3)',
+    background: 'var(--g1)',
     color: 'var(--g12)',
     logo: logoBlack,
     Hfonts: {
@@ -71,13 +71,13 @@ export default {
     strong: 'var(--g12)',
     Hfonts: {
       fontWeight: 100,
-      fontColor: 'var(--g9)',
+      fontColor: 'var(--g8)',
       paddingBottom: 12,
     },
     Pfonts: {
       fontSize: 24,
       fontWeight: 300,
-      fontColor: 'var(--g9)',
+      fontColor: 'var(--g12)',
       paddingBottom: 8,
     },
   },
@@ -106,7 +106,7 @@ export default {
     },
   },
   footer: {
-    background: 'var(--g4)',
+    background: 'var(--g3)',
     color: 'var(--g12)',
     logo: logoBlack,
     titleFonts: {
@@ -141,7 +141,7 @@ export default {
     },
   },
   cursoPage: {
-    background: 'var(--g3)',
+    background: 'var(--g1)',
     color: 'var(--g12)',
     strong: 'var(--g12)',
     Hfonts: {

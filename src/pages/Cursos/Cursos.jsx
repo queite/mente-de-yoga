@@ -3,15 +3,15 @@ import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
 // import CardFormacao from '../../components/Cards/CardFormacao';
-import { CursosMain } from './CursosPage.styles';
+// import { CursosMain } from './CursosPage.styles';
 
 export default function Cursos() {
   return (
-    <CursosMain>
+    <div>
       <Header />
       <Hero />
       {/* <CardFormacao /> */}
       <Footer />
-    </CursosMain>
+    </div>
   );
 }

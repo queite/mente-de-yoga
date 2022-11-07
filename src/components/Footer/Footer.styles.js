@@ -30,6 +30,7 @@ export const FooterMain = styled(BasicMain)`
   /* width: var(--wid); */
   min-height: 60px;
   background-color: ${(props) => props.theme.footer.background};
+  /* background-color: red; */
   text-align: right;
   display: flex;
   justify-content: flex-end;
