@@ -2,6 +2,7 @@
 /* eslint-disable import/prefer-default-export */
 import { useContext } from 'react';
 import styled, { css, ThemeContext } from 'styled-components';
+import { AiFillCheckCircle, AiOutlineCheckCircle } from 'react-icons/ai';
 
 function getContextInfos(infos, type) {
   const allInfos = useContext(ThemeContext);
@@ -106,5 +107,29 @@ export const Li = styled.li`
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   list-style-type: none;
+  /* display: list-item; */
+  /* text-align: -webkit-match-parent; */
   ${(props) => fontProp(props.infos, 'P')}
+`;
+
+export const Ul = styled.ul`
+  margin: 4px 0 0 24px;
+`;
+
+export const UlSub = styled.ul`
+  margin: 8px 0 0 64px;
+  /* margin-left: 64px; */
+`;
+
+export const LIcon = styled(AiFillCheckCircle)`
+    color: var(--d5);
+    margin: 0 12px 0 -24px;
+    font-size: 12px;
+`;
+
+export const OIcon = styled(AiOutlineCheckCircle)`
+    color: var(--d5);
+    margin: 0 12px 0 -24px;
+    font-size: 12px;
+    /* margin-left: 32px; */
 `;

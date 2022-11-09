@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  CursosContentAbout, LIcon, OIcon, Ul,
+  CursosContentAbout,
 } from './CursosDetails.styles';
 import * as T from '../../../Styles/texts';
 
@@ -9,92 +9,92 @@ export default function Conteudo() {
   return (
     <CursosContentAbout>
       <T.H3 infos={c} detach>Conteúdo</T.H3>
-      <Ul>
+      <T.Ul>
         <T.Li infos={c}>
-          <LIcon />
+          <T.LIcon />
           Contextualização Histórica do Yoga.
         </T.Li>
         <T.Li infos={c}>
-          <LIcon />
+          <T.LIcon />
           As origens e os fundamentos do Haṭha Yoga.
-          <Ul>
+          <T.Ul>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Os upaniṣads do Yoga.
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               O yoga de Patañjali.
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               O movimento Siddha.
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Anatomia energética.
             </T.Li>
-          </Ul>
+          </T.Ul>
         </T.Li>
         <T.Li infos={c}>
-          <LIcon />
+          <T.LIcon />
           Os principais elementos do Haṭha Yoga e suas funções.
-          <Ul>
+          <T.Ul>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Āsana (posturas).
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Prāṇāyāma (respirações).
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Mudrā (selos).
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Dhyāna (meditação).
             </T.Li>
-          </Ul>
+          </T.Ul>
         </T.Li>
         <T.Li infos={c}>
-          <LIcon />
+          <T.LIcon />
           Temas complementares.
-          <Ul>
+          <T.Ul>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Introdução ao Ayurveda.
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Mantra yoga.
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               A diversidade do Yoga.
             </T.Li>
-          </Ul>
+          </T.Ul>
         </T.Li>
         <T.Li infos={c}>
-          <LIcon />
+          <T.LIcon />
           Metodologia de ensino do Yoga.
-          <Ul>
+          <T.Ul>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Aulas individuais.
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Aulas em grupo.
             </T.Li>
             <T.Li infos={c}>
-              <OIcon />
+              <T.OIcon />
               Públicos diversos: idosos, crianças, gestantes, obesos.
             </T.Li>
-          </Ul>
+          </T.Ul>
         </T.Li>
-      </Ul>
+      </T.Ul>
       {/* <CardFormacao /> */}
     </CursosContentAbout>
   );

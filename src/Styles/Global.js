@@ -7,7 +7,7 @@ const Global = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none
+    /* list-style: none */
   }
   :root {
       --escuro: black;
@@ -41,8 +41,8 @@ const Global = createGlobalStyle`
       --d6: rgba(146, 71, 17, 1);
       --d7: rgba(120, 61, 6, 1);
       //cinza
-      --g1: rgba(245, 250, 247, 1);
-      --g2: rgba(235, 240, 237, 1);
+      --g1: rgba(242, 242, 242, 1);
+      --g2: rgba(240, 237, 235, 1);
       --g3: rgba(220, 224, 222, 1);
       --g4: rgba(200, 204, 202, 1);
       --g5: rgba(180, 184, 182, 1);
@@ -60,6 +60,8 @@ const Global = createGlobalStyle`
 
       /* background-color: ${(props) => props.theme.general.background};
       color: ${(props) => props.theme.general.color}; */
+      
+      scroll-behavior: smooth;
 
     }
     // Fontes

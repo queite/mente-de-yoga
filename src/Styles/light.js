@@ -141,7 +141,9 @@ export default {
     },
   },
   cursoPage: {
-    background: 'var(--g1)',
+    background1: 'var(--g1)',
+    background2: 'var(--g2)',
+    background3: 'var(--g3)',
     color: 'var(--g12)',
     strong: 'var(--g12)',
     Hfonts: {

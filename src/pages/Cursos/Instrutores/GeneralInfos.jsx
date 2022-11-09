@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  CursosContent, Img, GeneralInfos, LIcon,
+  CursosContent, Img, GeneralInfos,
 } from './CursosDetails.styles';
 import getImage from '../../../helpers/helpers';
 import * as T from '../../../Styles/texts';
@@ -21,31 +21,43 @@ export default function FirstInfos() {
           indicado para  quem está em busca de conhecimento e tem o
           desejo de se tornar instrutor de Yoga.
         </T.P3>
-        <T.P3 infos={c} detach>
+        {/* <T.P3 infos={c} detach>
           Presencial com início no dia 25 e 26 de Fevereiro de 2023 em Passo Fundo.
-        </T.P3>
-        <ul>
+        </T.P3> */}
+        <T.Ul>
           <T.Li infos={c}>
-            <LIcon />
+            <T.LIcon />
             Curso Completo Com Certificação.
           </T.Li>
           <T.Li infos={c}>
-            <LIcon />
+            <T.LIcon />
+            Escola registrada na OSCIP sob n° 443.
+          </T.Li>
+          <T.Li infos={c}>
+            <T.LIcon />
             Conteúdo digital e impresso.
           </T.Li>
           <T.Li infos={c}>
-            <LIcon />
-            Materiais para aulas práticas em sala de aula.
+            <T.LIcon />
+            Você ganha:
+          </T.Li>
+        </T.Ul>
+        <T.UlSub>
+          <T.Li infos={c}>
+            <T.OIcon />
+            Um livro.
           </T.Li>
           <T.Li infos={c}>
-            <LIcon />
+            <T.OIcon />
             Uma camiseta Personalizada da Turma de Instrutores.
           </T.Li>
           <T.Li infos={c}>
-            <LIcon />
-            Um tapete para suas práticas em Sala de aula (ao final do cursos ele será seu).
+            <T.OIcon />
+            Um tapete para suas práticas em Sala de aula que será seu
+            ao final do curso.
           </T.Li>
-        </ul>
+        </T.UlSub>
+
       </GeneralInfos>
       {/* <CardFormacao /> */}
     </CursosContent>

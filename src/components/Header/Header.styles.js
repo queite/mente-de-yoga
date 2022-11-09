@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 // import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
-import { BasicLink, BasicMain, BasicContent } from '../../Styles/Generals';
+import { Link } from 'react-router-dom';
+import { BasicMain, BasicContent } from '../../Styles/Generals';
 
 export const MainHeader = styled(BasicMain)`
     background-color: ${(props) => props.theme.header.background};
@@ -28,22 +29,21 @@ export const Menu = styled.div`
     gap: 20px;
     justify-content: flex-end;
     flex-grow: 1;
+
+    a {
+      font-family: 'Open Sans', sans-serif;
+      color: ${(props) => props.theme.general.links};
+      border-bottom: 2px solid;
+      border-color: ${(props) => props.theme.header.background};
+      
+      &:hover{
+        border-bottom: 2px solid var(--d4);
+      }    
+    }
 `;
 
-// export const Fold = styled(AiOutlineMenuFold)`
-//   cursor: pointer;
-//   font-size: 30px;
-//   color: var(--g5);
-// `;
-
-// export const Unfold = styled(AiOutlineMenuUnfold)`
-//   cursor: pointer;
-//   font-size: 30px;
-//   color: var(--g5);
-// `;
-
-export const StLink = styled(BasicLink)`
-  /* color: red; */
+export const StLink = styled(Link)`
+  font-family: 'Open Sans', sans-serif;
   color: ${(props) => props.theme.general.links};
   border-bottom: 2px solid;
   border-color: ${(props) => props.theme.header.background};
@@ -52,7 +52,7 @@ export const StLink = styled(BasicLink)`
   }
 `;
 
-export const HomeLink = styled(BasicLink)`
+export const HomeLink = styled(Link)`
   color: var(--g5);
   `;
 

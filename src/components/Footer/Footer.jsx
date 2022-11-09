@@ -7,7 +7,7 @@ import {
 
 export default function Footer({ position }) {
   return (
-    <FooterMain position={position}>
+    <FooterMain position={position} id="footer">
       <FooterContent>
         <LeftContent>
           <a target="_blank" href="https://www.instagram.com/tomas.om.yoga/" rel="noreferrer">

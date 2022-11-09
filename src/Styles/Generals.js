@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-export const BasicLink = styled(Link)`
-  font-family: 'Open Sans', sans-serif;
-`;
+// export const BasicLink = styled(Link)`
+//   font-family: 'Open Sans', sans-serif;
+// `;
 
 export const BasicMain = styled.main`
   padding: 60px 0;
