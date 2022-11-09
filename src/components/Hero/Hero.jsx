@@ -3,18 +3,12 @@ import React from 'react';
 import {
   HeroMain, HeroContent,
 } from './Hero.styles';
-// import imagesHero from '../../data/imagesHero';
 import getImage from '../../helpers/helpers';
 
-export default function Hero() {
-  // const getImage = () => {
-  //   const num = Math.floor(Math.random() * (6));
-  //   const image = Object.values(imagesHero)[num];
-  //   return image;
-  // };
-
+// eslint-disable-next-line react/prop-types
+export default function Hero({ page }) {
   return (
-    <HeroMain image={() => getImage()}>
+    <HeroMain image={() => getImage(page)}>
       <HeroContent />
     </HeroMain>
   );

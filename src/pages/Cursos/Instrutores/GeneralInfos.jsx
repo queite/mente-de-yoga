@@ -10,7 +10,7 @@ export default function FirstInfos() {
   return (
     <CursosContent>
       <Img>
-        <img src={getImage()} alt="hatha" />
+        <img src={getImage('general')} alt="hatha" />
         {/* <div /> */}
       </Img>
       <GeneralInfos>

@@ -1,10 +1,12 @@
+import yogaSquare from '../img/yogaSquare/yogaSquare.jpeg';
+import yogaSquare1 from '../img/yogaSquare/yogaSquare1.jpeg';
+import yogaSquare2 from '../img/yogaSquare/yogaSquare2.jpg';
+import yogaSquare3 from '../img/yogaSquare/yogaSquare3.jpg';
+import yogaSquare4 from '../img/yogaSquare/yogaSquare4.jpg';
 import yogaImage1 from '../img/uns/yoga1.jpg';
 import yogaImage2 from '../img/uns/yoga2.jpg';
 import yogaImage3 from '../img/uns/yoga3.jpg';
-import yogaImage4 from '../img/uns/yoga4.jpg';
-import yogaImage5 from '../img/uns/yoga5.jpg';
-import yogaImage6 from '../img/uns/yoga7.jpg';
 
-const imagesHero = [yogaImage1, yogaImage2, yogaImage3, yogaImage4, yogaImage5, yogaImage6];
+export const imagesSquare = [yogaSquare, yogaSquare1, yogaSquare2, yogaSquare3, yogaSquare4];
 
-export default imagesHero;
+export const imagesHero = [yogaImage1, yogaImage2, yogaImage3];

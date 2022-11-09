@@ -8,7 +8,8 @@ export const HeroMain = styled(BasicMain)`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
+  /* filter: contrast(80%) brightness(100%); */
   `;
 
 export const HeroContent = styled(BasicContent)`

@@ -7,7 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import CursosInstrutores from './pages/Cursos/Instrutores/CursosInstrutores';
 // import Artigos from './pages/Artigos';
 // import Treinamentos from './pages/Treinamentos';
-// import Sobre from './pages/Sobre';
+import Sobre from './pages/Sobre';
 import Global from './Styles/Global';
 // import Alunos from './pages/Alunos';
 // import dark from './Styles/dark';
@@ -27,7 +27,7 @@ function App() {
           {/* <Route path="/cursos/instrutores" element={<CursosInstrutores />} /> */}
           {/* <Route path="/artigos" element={<Artigos />} /> */}
           {/* <Route path="/treinamentos" element={<Treinamentos />} /> */}
-          {/* <Route path="/sobre" element={<Sobre />} /> */}
+          <Route path="/sobre" element={<Sobre />} />
           {/* <Route path="/alunos" element={<Alunos />} /> */}
           {/* <Route path="/alunos/:id" element={<AlunosPage />} /> */}
           {/* <Route path="/adminconfigurations" element={<AdminConfigurations />} /> */}

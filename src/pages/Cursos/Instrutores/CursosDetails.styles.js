@@ -47,7 +47,7 @@ export const Img = styled.div`
   grid-area: img;
 /* position: relative; */
     img {
-        filter: grayscale(1);
+        /* filter: grayscale(1); */
         width: 500px;
         height: 450px;
         object-fit: cover;
