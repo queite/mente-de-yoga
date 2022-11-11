@@ -164,4 +164,20 @@ export default {
       margin: [24, 0, 0, 0],
     },
   },
+  sobrePage: {
+    background: 'var(--g3)',
+    color: 'var(--g12)',
+    strong: 'var(--g12)',
+    Hfonts: {
+      fontWeight: 100,
+      fontColor: 'var(--g9)',
+      paddingBottom: 20,
+    },
+    Pfonts: {
+      fontSize: 24,
+      fontWeight: 300,
+      fontColor: 'var(--g9)',
+      paddingBottom: 20,
+    },
+  },
 };

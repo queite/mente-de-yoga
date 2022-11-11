@@ -7,7 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import CursosInstrutores from './pages/Cursos/Instrutores/CursosInstrutores';
 // import Artigos from './pages/Artigos';
 // import Treinamentos from './pages/Treinamentos';
-import Sobre from './pages/Sobre';
+import Sobre from './pages/Sobre/Sobre';
 import Global from './Styles/Global';
 // import Alunos from './pages/Alunos';
 // import dark from './Styles/dark';

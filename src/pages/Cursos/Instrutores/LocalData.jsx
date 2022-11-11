@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  CursosContentAbout, CursosMain,
+  CursosContentAbout, CursosMain, A,
 } from './CursosDetails.styles';
 import * as T from '../../../Styles/texts';
 
@@ -27,13 +27,13 @@ export default function LocalData({ back }) {
           <T.P3 infos={c}>
             Clique
             {' '}
-            <a
+            <A
               target="_blank"
               rel="noreferrer"
               href="https://cethiseensino.com.br/produto/formacao-de-instrutores-de-yoga/"
             >
-              aqui
-            </a>
+              <T.St infos={c}>aqui</T.St>
+            </A>
             {' '}
             para maiores informações quanto a calendário e valores.
           </T.P3>
@@ -53,13 +53,13 @@ export default function LocalData({ back }) {
           <T.P3 infos={c}>
             Clique
             {' '}
-            <a
+            <A
               target="_blank"
               rel="noreferrer"
               href="https://arcturusterapias.com.br"
             >
-              aqui
-            </a>
+              <T.St infos={c}>aqui</T.St>
+            </A>
             {' '}
             para maiores informações quanto a calendário e valores.
           </T.P3>

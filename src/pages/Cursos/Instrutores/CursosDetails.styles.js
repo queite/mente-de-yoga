@@ -63,3 +63,7 @@ export const Img = styled.div`
         left: -5px;
     } */
 `;
+
+export const A = styled.a`
+  text-decoration: none;
+`;
