@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from '../Styles/buttons';
+import { sendData } from '../helpers/requests';
 // import logo from '../img/LogoYogaBlack.png';
 
 const Div = styled.div`
@@ -26,27 +28,28 @@ const Form = styled.form`
     }
 `;
 
-// const handleSubmit = (event) => {
-//   event.preventDefault();
-//   console.log('Estou aqui');
-// };
-
 export default function AdminLogin() {
   const a = 'alunosPage';
+  const navigate = useNavigate();
+  const [login, setLogin] = useState({});
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const { token } = await sendData('/login', { email: login.email, password: login.password });
+    console.log('Token', token);
+    navigate('/');
+  };
+
   return (
     <Div>
-      <Form
-        action="/adminconfigurations" // para onde é enviada a informação no servidor
-        // method="post"
-        // target="_blank"
-        target="/adminconfigurations"
-        // onClick={(event) => handleSubmit(event)}
-      >
+      <Form>
         <label htmlFor="fEmail">
           Email:
           <input
             type="email"
             name="fEmail"
+            value={login.email}
+            onChange={(e) => setLogin({ email: e.target.value, password: login.password })}
           />
         </label>
         <label htmlFor="fPassword">
@@ -54,11 +57,14 @@ export default function AdminLogin() {
           <input
             type="password"
             name="fPassword"
+            value={login.password}
+            onChange={(e) => setLogin({ email: login.email, password: e.target.value })}
           />
         </label>
         <Button
           infos={a}
           type="submit"
+          onClick={(event) => handleSubmit(event)}
         >
           Entrar
         </Button>
