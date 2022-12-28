@@ -10,9 +10,9 @@ export default function Footer({ position }) {
     <FooterMain position={position} id="footer">
       <FooterContent>
         <LeftContent>
-          <a target="_blank" href="https://www.instagram.com/tomas.om.yoga/" rel="noreferrer">
+          <a target="_blank" href="https://www.instagram.com/mentedeyoga/" rel="noreferrer">
             <InstagramIcon />
-            @tomas.om.yoga
+            @mentedeyoga
           </a>
           <a target="_blank" href="https://wa.me/5554999964137" rel="noreferrer">
             <WhatsAppIcon />

@@ -15,3 +15,9 @@ export const BasicContent = styled.div`
     width: 80%;
     margin: 0 auto;
 `;
+
+export const BasicCard = styled.div`
+  box-shadow: 8px 8px 16px 0px rgba(13,13,13,0.4);
+  padding: 12px;
+  border-radius: 8px;
+`;

@@ -5,8 +5,12 @@ import logoBlack from '../img/LogoYogaBlack.png';
 export default {
   title: 'light',
   general: {
-    color: 'var(--g3)',
+    color: {
+      title: 'var(--g8)',
+      paragraph: 'var(--g12)',
+    },
     background: 'var(--g3)',
+    fontWeight: 100,
     strong: 'var(--g8)',
     links: 'var(--g12)',
     borderLinks: 'var(--g3)',
@@ -72,13 +76,13 @@ export default {
     Hfonts: {
       fontWeight: 100,
       fontColor: 'var(--g8)',
-      paddingBottom: 12,
+      paddingBottom: 0,
     },
     Pfonts: {
       fontSize: 24,
       fontWeight: 300,
       fontColor: 'var(--g12)',
-      paddingBottom: 8,
+      paddingBottom: 0,
     },
   },
   formationComponent: {

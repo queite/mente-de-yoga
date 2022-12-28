@@ -1,84 +1,124 @@
-import React from 'react';
-import {
-  CursosContentAbout, CursosMain,
-} from './CursosDetails.styles';
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { useEffect, useState } from 'react';
+import html from 'react-inner-html';
+import { CursosContentAbout, CursosMain } from './CursosDetails.styles';
+import { CursosContent, Img } from './HathaYoga.styles';
 import * as T from '../../../Styles/texts';
+import getImage from '../../../helpers/helpers';
+import prepare from '../../../helpers/paragrafos';
+
+const texto = [
+  'O /Haṭha /Yoga surge através de um grupo de yogis chamados /Siddhas. A palavra /Siddha significa realizado, é uma referência aos yoguis que já concluíram os objetivos do /Yoga, aqueles que já se aperfeiçoaram até a realização máxima, que possuem todos os tipos de poderes e que já transmutaram as impurezas do corpo, da mente e do mundo da matéria. Dentre os /Siddhas existiam os /Nathas, e dentre estes existia yogi /Matsyendra , um pescador.',
+  '/Matsyendra foi escolhido por /Śiva para receber os ensinamentos do /Haṭha /Yoga e por transmiti-los ao mundo. Por 12 anos ele se dedicou exclusivamente às práticas que lhe foram transmitidas diretamente, de professor para aluno. No final desse período, quando o treinamento se encerrou. /Matsyendra, o senhor dos peixes, surge como um mestre totalmente realizado no /Haṭha /Yoga com a função de disseminá-lo pelo mundo.',
+  '/Matsyendra ensina /Goraksha, e desta forma, de professor para aluno, o conhecimento do /Haṭha /Yoga chega até /Svātmārāma que, por volta o séc XV, organiza todo o conhecimento desta linhagem no texto /Haṭha /Yoga /Pradīpikā permitindo assim que este conhecimento alcançasse uma dimensão ainda maior.',
+  'A palavra /Haṭha significa força. É uma referência as gigantes força e obstinação necessárias para equilibrar as energias internas de /Ha e /Ṭha , do sol e da lua, da contração e do relaxamento, dos sistemas nevosos simpático e parasimpático, dos fluxos de /prāṇa que ocorrem em /piṇgalā /nāḍī e /iḍā /nāḍī; a união entre /Śiva e /Śakti.',
+  'Com as práticas de /kriyās você elimina as impurezas do corpo, ganhando /śodhana, pureza e saúde.'];
 
 // eslint-disable-next-line react/prop-types
 export default function HathaYoga({ back }) {
-  const c = 'cursoInstrutores';
+  const [paragrafos, setParagrafos] = useState([]);
+  useEffect(() => {
+    setParagrafos(prepare(texto));
+  }, []);
   return (
     <CursosMain back={back}>
       <CursosContentAbout>
-        <T.H3 infos={c} detach>Haṭha yoga?</T.H3>
-        <T.P3 infos={c}>
-          Hatha Yoga é a busca do equilíbrio entre as forças solar e lunar,
-          respectivamente das energias masculina e feminina – que não tem a ver com
-          identificação sexual. Isto é conseguido através da união da mente com a alma.
-          A palavra Hatha é dividida em:
-        </T.P3>
-        <T.Ul>
-          <T.Li infos={c}>
-            <T.LIcon />
-            Ha significa sol e é representado pelo sol do seu corpo, a sua alma.
-          </T.Li>
-          <T.Li infos={c}>
-            <T.LIcon />
-            Tha significa lua, que representa a sua consciência, a sua mente.
-          </T.Li>
-        </T.Ul>
-        <T.P3 infos={c}>
-          Uma das características do Hatha Yoga é a plena atenção na ação.
-          Ou seja, se você está fazendo um asana (postura física) deve estar
-          totalmente presente em todas as fases, que são: entrada, permanência e saída.
-          Se você está praticando um pranayama (exercício respiratório),
-          no Hatha Yoga deve-se estar com plena atenção à respiração.
-        </T.P3>
-        <T.Ul>
-          <T.Li infos={c}>
-            <T.LIcon />
-            O hatha yoga tem sua ênfase nos asanas (posturas) e
-            pranayamas (técnicas de respiração)
-          </T.Li>
-          <T.Li infos={c}>
-            <T.LIcon />
-            O hatha Yoga é base para todos os métodos que existem.
-          </T.Li>
-          <T.Li infos={c}>
-            <T.LIcon />
-            Método indicado para todas as idades.
-          </T.Li>
-        </T.Ul>
-        <T.H4 infos={c}>
-          Benefícios:
-        </T.H4>
-        <T.Ul>
-          <T.Li infos={c}>
-            <T.LIcon />
-            A pratica de āsana desenvolve sthira, a estabilidade. Seu corpo fica forte,
-            flexível e resistente.
-          </T.Li>
-          <T.Li infos={c}>
-            <T.LIcon />
-            Melhora o foco e concentração.
-            Os Asanas promovem efeito calmante e relaxante reduzindo a tensão muscular.
-          </T.Li>
-          <T.Li infos={c}>
-            <T.LIcon />
-            Alinha a postura promovendo o alívio das dores.
-          </T.Li>
-          <T.Li infos={c}>
-            <T.LIcon />
-            Trabalha o alinhamento dos chakras trazendo o equilíbrio entre o corpo,
-            mente e alma
-          </T.Li>
-          <T.Li infos={c}>
-            <T.LIcon />
-            Promove sua consciência corporal, aumentando seu autoconhecimento e
-            autoestima.
-          </T.Li>
-        </T.Ul>
+
+        {/* ----------------------------------------------------------------- */}
+        {/* HATHA YOGA */}
+        {/* ----------------------------------------------------------------- */}
+
+        <T.H3 detach>O Haṭha yoga</T.H3>
+        <T.Cita>
+          <T.Sk>
+            śrīādināthāya namo’stu tasmai yenopadiṣṭā haṭhayogavidyā |
+            <br />
+            vibhrājate pronnatarājayogam āroḍhumicchoradhirohiṇīva ||
+          </T.Sk>
+          <T.Sk>
+            Saudações ao glorioso primeiro, Śrī Ādināth,
+            que instruiu o conhecimento do haṭha yoga
+            <br />
+            que brilha como uma escada para aqueles que desejam ascender ao
+            estágio mais alto do yoga, o rāja yoga.
+          </T.Sk>
+        </T.Cita>
+        <p {...html(paragrafos[0])} />
+        <p {...html(paragrafos[1])} />
+        <p {...html(paragrafos[2])} />
+        <p {...html(paragrafos[3])} />
+
+        {/* ----------------------------------------------------------------- */}
+        {/* BENEFICIOS */}
+        {/* ----------------------------------------------------------------- */}
+
+        <h4>
+          O que você ganha com a prática integral de Haṭha Yoga:
+        </h4>
       </CursosContentAbout>
+      <CursosContent>
+        <ul>
+          <li>
+            <T.LIcon />
+            Com as práticas de
+            <skr> kriyās </skr>
+            você elimina as impurezas do corpo, ganhando
+            <skr> śodhana </skr>
+            , pureza e saúde.
+          </li>
+          <li>
+            <T.LIcon />
+            Com as práticas de
+            <T.Skr> āsanas </T.Skr>
+            você elimina a fraqueza do corpo, ganhando
+            <T.Skr> dṛḍhatā </T.Skr>
+            , força, solidez e durabilidade.
+          </li>
+          <li>
+            <T.LIcon />
+            Com as práticas de
+            <T.Skr> mudrā </T.Skr>
+            você elimina a instabilidade, ganhando
+            <T.Skr> sthairya </T.Skr>
+            , estabilidade, constância e permanência.
+          </li>
+          <li>
+            <T.LIcon />
+            Com as práticas de
+            <T.Skr> pratyāhāra </T.Skr>
+            você elimina a impaciência e a ansiedade, ganhando
+            <T.Skr> dhairya </T.Skr>
+            , calma, paciência, tranquiliade, suavidade e determinação.
+          </li>
+          <li>
+            <T.LIcon />
+            Com as práticas de
+            <T.Skr> prāṇāyāma </T.Skr>
+            você elimina a densidade, a depressão e a dureza, ganhando
+            <T.Skr> lāghava </T.Skr>
+            , vitalidade, luz, leveza e destreza.
+          </li>
+          <li>
+            <T.LIcon />
+            Com as práticas de
+            <T.Skr> dhyāna </T.Skr>
+            você elimina a dispersão e as ilusões, ganhando
+            <T.Skr> pratyakṣa </T.Skr>
+            , foco, percepção correta e unidirecionamento da mente.
+          </li>
+          <li>
+            <T.LIcon />
+            Alcançando
+            <T.Skr> samādhi </T.Skr>
+            você ganha
+            <T.Skr> nirlipta </T.Skr>
+            , libertação.
+          </li>
+        </ul>
+        <Img>
+          <img src={getImage('general')} alt="hatha" />
+        </Img>
+      </CursosContent>
     </CursosMain>
   );
 }

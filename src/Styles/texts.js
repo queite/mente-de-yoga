@@ -29,6 +29,30 @@ export const St = styled.strong`
     ${(props) => typoStrong(props.infos, 'strong')}
 `;
 
+export const Sk = styled.p`
+  font-family: 'Special Elite', cursive;
+  color: var(--g8);
+  font-size: 0.8em;
+  font-weight: 100;
+  padding: 8px 0;
+`;
+
+export const Skr = styled.strong`
+  font-family: 'Special Elite', cursive;
+  font-size: 1em;
+  font-weight: 500;
+`;
+
+export const Cita = styled.div`
+  /* margin-left: 12px; */
+  border-left: 2px solid var(--d6);
+  padding-left: 12px;
+
+  div {
+    margin-bottom: 12px;
+  }
+`;
+
 function fontProp(infos, type) { // pagina , H ou P
   const data = getContextInfos(infos, type);
   const {
@@ -44,10 +68,10 @@ function fontProp(infos, type) { // pagina , H ou P
   return ret;
 }
 
-function detach() {
+export function detach() {
   const ret = css`
     border: 1px solid var(--d6);
-    padding: 4px;
+    padding: 8px;
     border-radius: 8px;
     margin-bottom: 8px;
   `;
@@ -55,65 +79,39 @@ function detach() {
 }
 
 export const H1 = styled.h1`
-  font-family: 'Cormorant SC', serif;
-  font-size: 48px;
-  ${(props) => fontProp(props.infos, 'H')}
   ${(props) => props.detach && detach()}
 `;
 
 export const P1 = styled.p`
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-  ${(props) => fontProp(props.infos, 'P')}
   ${(props) => props.detach && detach()}
 `;
 
 export const H2 = styled.h2`
-  font-family: 'Cormorant SC', serif;
-  font-size: 36px;
-  ${(props) => fontProp(props.infos, 'H')}
   ${(props) => props.detach && detach()}
 `;
 
 export const P2 = styled.p`
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  ${(props) => fontProp(props.infos, 'P')}
   ${(props) => props.detach && detach()}
 `;
 
 export const H3 = styled.h3`
-  font-family: 'Cormorant SC', serif;
-  font-size: 28px;
-  ${(props) => fontProp(props.infos, 'H')}
   ${(props) => props.detach && detach()}
 `;
 
 export const P3 = styled.p`
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  ${(props) => fontProp(props.infos, 'P')}
   ${(props) => props.detach && detach()}
 `;
 
-export const H4 = styled.h3`
-  font-family: 'Cormorant SC', serif;
-  font-size: 20px;
-  ${(props) => fontProp(props.infos, 'H')}
+export const H4 = styled.h4`
   ${(props) => props.detach && detach()}
 `;
 
 export const Li = styled.li`
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  list-style-type: none;
-  /* display: list-item; */
-  /* text-align: -webkit-match-parent; */
   ${(props) => fontProp(props.infos, 'P')}
 `;
 
 export const Ul = styled.ul`
-  margin: 4px 0 0 24px;
+  margin: 4px 0 8px 24px;
 `;
 
 export const UlSub = styled.ul`

@@ -57,16 +57,53 @@ const Global = createGlobalStyle`
       // largura e altura
       --wid: 100vw; // largura
       --hei: 100vh; // altura  
-
-      /* background-color: ${(props) => props.theme.general.background};
-      color: ${(props) => props.theme.general.color}; */
       
       scroll-behavior: smooth;
-
     }
     // Fontes
-    
-
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant SC', serif;
+      color: ${(props) => props.theme.general.color.title};
+      font-weight: ${(props) => props.theme.general.fontWeight};
+      /* margin: 28px 0; */
+      padding: 8px 0;
+    }
+    p, p1, p2 {
+      font-family: 'Open Sans', sans-serif;
+      color: ${(props) => props.theme.general.color.paragraph};
+      font-weight: ${(props) => props.theme.general.fontWeight};
+    }
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+    p1 {
+      font-size: 24px;
+    }
+    p2 {
+      font-size: 20px;
+    }
+    li {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      list-style-type: none;
+    }
+    ul {
+      margin: 4px 0 8px 24px;
+    }
+    skr {
+      font-family: 'Special Elite', cursive;
+      font-size: 1em;
+      font-weight: 500;
+    }
 `;
 
 export default Global;

@@ -7,7 +7,7 @@ import Hero from '../../../components/Hero/Hero';
 //   CursosContentAbout,
 // } from './CursosDetails.styles';
 // import * as T from '../../../Styles/texts';
-import FirstInfos from './GeneralInfos';
+import GeneralInfos from './GeneralInfos';
 import Conteudo from './Conteudo';
 import Programacao from './Programacao';
 import HathaYoga from './HathaYoga';
@@ -20,7 +20,7 @@ export default function CursosInstrutores() {
     <div>
       <Header />
       <Hero />
-      <FirstInfos />
+      <GeneralInfos />
       <Yoga back="back" />
       <HathaYoga />
       <Programacao back="back" />

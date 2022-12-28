@@ -1,34 +1,14 @@
 import styled from 'styled-components';
-import { BasicContent, BasicMain } from '../../../Styles/Generals';
-
-export const CursosMain = styled(BasicMain)`
-  background-color: ${(props) => props.back === 'back' && props.theme.cursoPage.background1};
-  padding-top: 0px;
-  padding-bottom: 0px;
-`;
-
-export const TitleContent = styled(BasicContent)`
-`;
+import { BasicContent } from '../../../Styles/Generals';
 
 export const CursosContent = styled(BasicContent)`
   grid-template-columns: 6fr 6fr;
   grid-template-areas:
-  "img text";
+  "text img";
   align-items: center;
-  margin: 40px auto;
+  margin: 0px auto;
   list-style-position: outside;
-`;
-
-export const CursosContentAbout = styled(BasicContent)`
-  padding: 20px 0;
-`;
-
-export const GeneralInfos = styled.div`
-  grid-area: text;
-`;
-
-export const CursosTitle = styled(BasicContent)`
-  margin-top: 40px;
+  /* background-color: red; */
 `;
 
 export const Img = styled.div`
@@ -50,8 +30,4 @@ export const Img = styled.div`
         bottom: -3px;
         left: -5px;
     } */
-`;
-
-export const A = styled.a`
-  text-decoration: none;
 `;

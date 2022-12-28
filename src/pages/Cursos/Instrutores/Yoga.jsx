@@ -1,50 +1,42 @@
-import React from 'react';
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { useState, useEffect } from 'react';
+import html from 'react-inner-html';
 import {
   CursosContentAbout, CursosMain,
 } from './CursosDetails.styles';
 import * as T from '../../../Styles/texts';
+import prepare from '../../../helpers/paragrafos';
+
+const texto = [
+  'Apesar de que as origens do /Yoga se perdem na antiguidade, sua primeira forma estruturada surge com /Patañjali entre os anos de 200AEC e 200EC. Ele trouxe unidade ao /Yoga. Todo o conhecimento sobre o /Yoga disponível na época, que estava disperso, foi apresentado com coesão e com maestria na forma de uma metodologia clara através do /Yoga /Sūtra.',
+  '/Patañjali foi, portanto, um compilador e sistematizador para o /Yoga. Sobre ele quase nada se sabe, se era um homem ou uma mulher, ou se o nome /Patañjali era apenas um pseudônimo para um grupo de yoges, o que é provável. Sabe-se com certeza que era um profundo conhecedor do /Yoga e de outras tradições. Seu sistema foi tão bem estruturado que o Yoga passou a ser reconhecido com um dos 6 /Darśanas, um dos 6 pontos de vistas considerados em concordância com a tradição Védica.',
+  '/Patañjali foi tão importante que a partir dele podemos dizer com clareza o que é /Yoga e o que não é /Yoga.',
+  '/Yoga é uma metodologia, um método,'];
 
 // eslint-disable-next-line react/prop-types
 export default function Yoga({ back }) {
-  // console.log('YOGA PROP', back);
-  const c = 'cursoInstrutores';
+  const [paragrafos, setParagrafos] = useState([]);
+  useEffect(() => {
+    setParagrafos(prepare(texto));
+  }, []);
   return (
     <CursosMain back={back}>
       <CursosContentAbout>
-        <T.H3 infos={c} detach>Por que fazer yoga ?</T.H3>
-        <T.P3 infos={c}>
-          Essa disciplina de prática física e mental se originou na Índia há cerca de 5000 anos.
-          A palavra yoga significa união e refere-se à conexão entre corpo, mente e espírito.
-          Existem muitos tipos de yoga, podendo variar entre aulas relaxantes ou mais dinâmicas,
-          que exigem mais do corpo fisicamente, mas uma coisa é certa:
-          seja qual for o estilo que você escolher praticar, ele melhorará
-          sua saúde incrivelmente.
-        </T.P3>
-        <T.P3 infos={c}>
-          Se você acha que o yoga é apenas tocar os dedos dos pés ou ficar de cabeça para baixo,
-          isso significa que você está perdendo o melhor do yoga.
-          As técnicas mais comuns praticadas no yoga são posturas (asanas em sânscrito),
-          exercícios respiratórios (pranayamas em sânscrito) e meditação.
-        </T.P3>
-        <T.P3 infos={c}>
-          Se praticado regularmente, o yoga mantém você mais saudável.
-          Pode ajudar também com que os problemas e dores desapareçam,
-          evita o surgimento de doenças relacionadas ao desequilíbrio corporal,
-          proporciona maior clareza mental, equilibra as emoções e muito mais.
-        </T.P3>
-        <T.P3 infos={c}>
-          Em conclusão, Yoga é a arte de trabalhar o corpo e a mente de moderar os
-          sentimentos nas ações e buscar a felicidade dos sentidos pela concentração correta.
-        </T.P3>
-        <T.P3 infos={c}>
-          Formação sem pré-requisitos na modalidade de curso livre é indicado
-          para quem está em busca de conhecimento e tem o desejo de se tornar instrutor de Yoga,
-          vivenciando uma profissão repleta de qualidade de vida e satisfação pessoal.
-        </T.P3>
-        <T.P3 infos={c}>
-          É indicado também para aqueles que já ministram aulas de Yoga
-          e buscam um aprimoramento profissional.
-        </T.P3>
+        <T.H3 detach>O yoga</T.H3>
+        <T.Cita>
+          <T.Sk>
+            yogāṅgānuṣṭhānād aśuddhi kṣaye jñana dīptir ā viveka khyāteḥ ||
+          </T.Sk>
+          <T.Sk>
+            Através da prática de todos os componentes do Yoga, tendo destruído
+            as impurezas da mente, firme na visão do discernimento, surge o brilho
+            da realidade espiritual.
+          </T.Sk>
+        </T.Cita>
+        <p {...html(paragrafos[0])} />
+        <p {...html(paragrafos[1])} />
+        <p {...html(paragrafos[2])} />
+        <p {...html(paragrafos[3])} />
       </CursosContentAbout>
     </CursosMain>
   );
