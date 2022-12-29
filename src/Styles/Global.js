@@ -104,6 +104,10 @@ const Global = createGlobalStyle`
       font-size: 1em;
       font-weight: 500;
     }
+    str {
+      font-weight: 700;
+      color: var(--g12);
+    }
 `;
 
 export default Global;

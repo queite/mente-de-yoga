@@ -36,35 +36,29 @@ export default function LocalData({ back }) {
             rel="noreferrer"
             href="https://cethiseensino.com.br/produto/formacao-de-instrutores-de-yoga/"
           >
-            <T.St infos={c}>Saiba mais ...</T.St>
+            <str>Saiba mais ...</str>
           </A>
         </G.BasicCard>
         <G.BasicCard>
           <T.H4 infos={c}>
             Arcturus
           </T.H4>
-          <p infos={c}>
+          <p>
             Terapia e Treinamentos – Erechim RS.
           </p>
           <T.Ul>
-            <T.Li infos={c}>
+            <li>
               <T.LIcon />
               Início dias 20 e 21 de maio de 2023
-            </T.Li>
+            </li>
           </T.Ul>
-          <p infos={c}>
-            Clique
-            {' '}
-            <A
-              target="_blank"
-              rel="noreferrer"
-              href="https://arcturusterapias.com.br"
-            >
-              <T.St infos={c}>aqui</T.St>
-            </A>
-            {' '}
-            para maiores informações quanto a calendário e valores.
-          </p>
+          <A
+            target="_blank"
+            rel="noreferrer"
+            href="https://arcturusterapias.com.br"
+          >
+            <str>Saiba mais ...</str>
+          </A>
         </G.BasicCard>
       </CursosContentAbout>
     </CursosMain>
