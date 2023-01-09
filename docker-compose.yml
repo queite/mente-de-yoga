@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  frontend:
+      build: ./
+      ports:
+        - 3000:3000
+      platform: linux/x86_64
+      working_dir: /app
+      healthcheck:
+        test: ["CMD", "lsof", "-t", "-i:3000"]
+        timeout: 10s
+        retries: 5
