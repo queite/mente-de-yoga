@@ -3,7 +3,7 @@ services:
   frontend:
       build: ./
       ports:
-        - 3000:3000
+        - 3000:80
       platform: linux/x86_64
       working_dir: /app
       healthcheck:
