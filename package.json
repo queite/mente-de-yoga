@@ -1,7 +1,8 @@
 {
   "name": "mente-de-yoga",
-  "homepage": "http://www.mentedeyoga.com.br",
+  "homepage": "http://mentedeyoga.com.br",
   "version": "0.1.0",
+  "description": "mente de yoga app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
