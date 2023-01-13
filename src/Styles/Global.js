@@ -66,7 +66,7 @@ const Global = createGlobalStyle`
       color: ${(props) => props.theme.general.color.title};
       font-weight: ${(props) => props.theme.general.fontWeight};
       /* margin: 28px 0; */
-      padding: 8px 0;
+      padding: 0px 0;
     }
     p, p1, p2 {
       font-family: 'Open Sans', sans-serif;

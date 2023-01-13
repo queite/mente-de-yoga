@@ -30,8 +30,8 @@ export default function Header() {
         <Menu>
           <StLink to="/">FORMAÇÃO DE INSTRUTORES</StLink>
           {/* <StLink to="/treinamentos">TREINAMENTOS</StLink> */}
-          <StLink to="/artigos">ARTIGOS</StLink>
-          <StLink to="/alunos">ALUNOS</StLink>
+          {/* <StLink to="/artigos">ARTIGOS</StLink> */}
+          {/* <StLink to="/alunos">ALUNOS</StLink> */}
           <StLink to="/sobre">SOBRE</StLink>
           <a href="#footer">
             CONTATOS
