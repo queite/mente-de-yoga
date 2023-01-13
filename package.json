@@ -1,6 +1,8 @@
 {
   "name": "mente-de-yoga",
+  "homepage": "https://hostinger-react-app.com",
   "version": "0.1.0",
+  "description": "mente de yoga app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
