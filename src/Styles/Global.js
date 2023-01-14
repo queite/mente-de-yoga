@@ -62,19 +62,20 @@ const Global = createGlobalStyle`
     }
     // Fontes
     h1, h2, h3, h4 {
-      font-family: 'Cormorant SC', serif;
+      /* font-family: 'Cormorant SC', serif; */
+      font-family: 'Cormorant SC', 'Palatino Linotype', 'Palatino', 'Palatino LT STD', 'Book Antiqua', 'Georgia', serif;
       color: ${(props) => props.theme.general.color.title};
       font-weight: ${(props) => props.theme.general.fontWeight};
       /* margin: 28px 0; */
       padding: 0px 0;
     }
     p, p1, p2 {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Open Sans', 'Arial', sans-serif;
       color: ${(props) => props.theme.general.color.paragraph};
       font-weight: ${(props) => props.theme.general.fontWeight};
     }
     h1 {
-      font-size: 48px;
+      font-size: 44px;
     }
     h2 {
       font-size: 36px;
@@ -92,7 +93,7 @@ const Global = createGlobalStyle`
       font-size: 20px;
     }
     li {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Open Sans', 'Arial', sans-serif;
       font-size: 16px;
       list-style-type: none;
     }
@@ -100,9 +101,12 @@ const Global = createGlobalStyle`
       margin: 4px 0 8px 24px;
     }
     skr {
-      font-family: 'Special Elite', cursive;
+      /* font-family: 'Special Elite', cursive; */
+      font-family: 'Optima', 'Segoe', 'Segoe UI', 'Candara', 'Calibri', 'Arial', sans-serif;
       font-size: 1em;
-      font-weight: 500;
+      /* font-weight: 600; */
+      font-style: italic;
+
     }
     str {
       font-weight: 700;
