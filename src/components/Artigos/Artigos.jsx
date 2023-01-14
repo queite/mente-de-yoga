@@ -4,7 +4,6 @@ import {
 } from './Artigos.styles';
 import CardComponent from '../Cards/CardComponent';
 import artigos from '../../data/artigos';
-import { Title } from '../../Styles/texts';
 
 const len = artigos.length;
 const id1 = Math.floor(Math.random() * (len)) + 1;
@@ -15,9 +14,9 @@ export default function Artigos() {
   return (
     <MainArtigos>
       <ContentArtigos>
-        <Title type="Article">
+        <h1>
           Artigos
-        </Title>
+        </h1>
       </ContentArtigos>
       <ContentArtigos>
         {
