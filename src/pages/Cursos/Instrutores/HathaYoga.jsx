@@ -68,49 +68,49 @@ export default function HathaYoga({ back }) {
           <li>
             <T.LIcon />
             Com as práticas de
-            <T.Skr> āsanas </T.Skr>
+            <skr> āsanas </skr>
             você elimina a fraqueza do corpo, ganhando
-            <T.Skr> dṛḍhatā </T.Skr>
+            <skr> dṛḍhatā </skr>
             , força, solidez e durabilidade.
           </li>
           <li>
             <T.LIcon />
             Com as práticas de
-            <T.Skr> mudrā </T.Skr>
+            <skr> mudrā </skr>
             você elimina a instabilidade, ganhando
-            <T.Skr> sthairya </T.Skr>
+            <skr> sthairya </skr>
             , estabilidade, constância e permanência.
           </li>
           <li>
             <T.LIcon />
             Com as práticas de
-            <T.Skr> pratyāhāra </T.Skr>
+            <skr> pratyāhāra </skr>
             você elimina a impaciência e a ansiedade, ganhando
-            <T.Skr> dhairya </T.Skr>
+            <skr> dhairya </skr>
             , calma, paciência, tranquiliade, suavidade e determinação.
           </li>
           <li>
             <T.LIcon />
             Com as práticas de
-            <T.Skr> prāṇāyāma </T.Skr>
+            <skr> prāṇāyāma </skr>
             você elimina a densidade, a depressão e a dureza, ganhando
-            <T.Skr> lāghava </T.Skr>
+            <skr> lāghava </skr>
             , vitalidade, luz, leveza e destreza.
           </li>
           <li>
             <T.LIcon />
             Com as práticas de
-            <T.Skr> dhyāna </T.Skr>
+            <skr> dhyāna </skr>
             você elimina a dispersão e as ilusões, ganhando
-            <T.Skr> pratyakṣa </T.Skr>
+            <skr> pratyakṣa </skr>
             , foco, percepção correta e unidirecionamento da mente.
           </li>
           <li>
             <T.LIcon />
             Alcançando
-            <T.Skr> samādhi </T.Skr>
+            <skr> samādhi </skr>
             você ganha
-            <T.Skr> nirlipta </T.Skr>
+            <skr> nirlipta </skr>
             , libertação.
           </li>
         </ul>
