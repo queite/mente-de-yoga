@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from '../Styles/buttons';
-import { sendData } from '../helpers/requests';
+// import { sendData } from '../helpers/requests';
 // import logo from '../img/LogoYogaBlack.png';
 
 const Div = styled.div`
@@ -35,8 +35,8 @@ export default function AdminLogin() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const { token } = await sendData('/login', { email: login.email, password: login.password });
-    console.log('Token', token);
+    // const { token } = await sendData('/login', { email: login.email, password: login.password });
+    // console.log('Token', token);
     navigate('/');
   };
 
