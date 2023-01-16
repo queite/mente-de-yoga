@@ -9,7 +9,7 @@ export const CursosContent = styled(BasicContent)`
   margin: 0px auto;
   list-style-position: outside;
   /* background-color: red; */
-  @media only screen and (max-width: 390px) {
+  @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     grid-template-areas:
             "text" "img"  ;
@@ -25,7 +25,7 @@ export const Img = styled.div`
         height: 350px;
         object-fit: cover;
         /* position: relative; */
-        @media only screen and (max-width: 390px) {
+        @media screen and (max-width: 600px) {
           /* display: none; */
           width: 100%;
         }
