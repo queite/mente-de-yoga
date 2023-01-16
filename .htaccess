@@ -1,4 +1,4 @@
-<!-- <IfModule mod_rewrite.c>
+<IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
@@ -6,9 +6,4 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . public/index.html [L]
-</IfModule> -->
-
-Options -MultiViews
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.html [QSA,L]
+</IfModule>
