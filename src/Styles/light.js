@@ -33,7 +33,7 @@ export default {
     },
   },
   header: {
-    background: 'var(--g4)',
+    background: 'var(--g1)',
     color: 'var(--g12)',
     logo: logoBlack,
     Hfonts: {
