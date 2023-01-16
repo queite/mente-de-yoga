@@ -29,7 +29,8 @@ export const GitHubsIcon = styled(AiFillGithub)`
 export const FooterMain = styled(BasicMain)`
   /* width: var(--wid); */
   min-height: 60px;
-  background-color: ${(props) => props.theme.footer.background};
+  /* background-color: ${(props) => props.theme.footer.background}; */
+  background-color: var(--g8);
   /* background-color: red; */
   text-align: right;
   display: flex;
