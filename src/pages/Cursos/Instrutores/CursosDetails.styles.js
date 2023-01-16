@@ -60,4 +60,7 @@ export const Locals = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  @media only screen and (max-width: 390px) {
+    grid-template-columns: 1fr;
+  }
 `;
