@@ -11,7 +11,7 @@ export default function GeneralInfos() {
       </C.Img>
       <C.GeneralInfos>
         <h2>FORMAÇÃO DE INSTRUTORES</h2>
-        <h3>Abordagem em Haṭha Yoga</h3>
+        <h3>com abordagem em Haṭha Yoga</h3>
         <p>
           Formação sem pré-requisitos na modalidade de curso livre,
           indicado para quem está em busca de conhecer a si mesmo, de conhecer
