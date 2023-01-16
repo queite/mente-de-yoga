@@ -3,8 +3,8 @@ import { BasicContent, BasicMain } from '../../../Styles/Generals';
 
 export const CursosMain = styled(BasicMain)`
   background-color: ${(props) => props.back === 'back' && props.theme.cursoPage.background1};
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 export const TitleContent = styled(BasicContent)`
@@ -54,4 +54,10 @@ export const Img = styled.div`
 
 export const A = styled.a`
   text-decoration: none;
+`;
+
+export const Locals = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 `;

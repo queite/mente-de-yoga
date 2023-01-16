@@ -5,19 +5,19 @@ import { HiOutlineMailOpen } from 'react-icons/hi';
 import { BasicMain, BasicContent } from '../../Styles/Generals';
 
 export const InstagramIcon = styled(TiSocialInstagramCircular)`
-  font-size: 32px;
+  font-size: 24px;
   color: var(--g9);
   margin-right: 12px;
 `;
 
 export const WhatsAppIcon = styled(AiOutlineWhatsApp)`
-  font-size: 32px;
+  font-size: 24px;
   color: var(--g9);
   margin-right: 12px;
 `;
 
 export const MailIcon = styled(HiOutlineMailOpen)`
-  font-size: 32px;
+  font-size: 24px;
   color: var(--g9);
   margin-right: 12px;
 `;
@@ -52,8 +52,8 @@ export const LeftContent = styled.div`
   flex-direction: column;
   /* text-align: left; */
   align-items: start;
-  font-size: 20px;
-  gap: 12px;
+  /* font-size: 20px; */
+  gap: 4px;
   a {
     display: flex;
     text-decoration: none;
