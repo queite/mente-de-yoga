@@ -11,11 +11,10 @@ import {
 // import Fonts from '../General/Fonts';
 // import logoG from '../../img/LogoYogaGold.png';
 // import { headerDark } from './HeaderInfos';
-import * as Text from '../../Styles/texts';
+// import * as Text from '../../Styles/texts';
 // import Switcher from '../Switcher';
 
 export default function Header() {
-  const c = 'header';
   return (
     <MainHeader>
       {/* <Switcher /> */}
@@ -25,7 +24,7 @@ export default function Header() {
             {/* <img src="" alt="logo gold" /> */}
             <Img />
           </HomeLink>
-          <Text.H2 infos={c}>MENTE DE YOGA</Text.H2>
+          <h2>MENTE DE YOGA</h2>
         </LogoNome>
         <Menu>
           <StLink to="/">FORMAÇÃO DE INSTRUTORES</StLink>

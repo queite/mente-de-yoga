@@ -7,19 +7,19 @@ import { BasicMain, BasicContent } from '../../Styles/Generals';
 export const InstagramIcon = styled(TiSocialInstagramCircular)`
   font-size: 24px;
   color: var(--g9);
-  margin-right: 12px;
+  margin-right: 4px;
 `;
 
 export const WhatsAppIcon = styled(AiOutlineWhatsApp)`
   font-size: 24px;
   color: var(--g9);
-  margin-right: 12px;
+  margin-right: 4px;
 `;
 
 export const MailIcon = styled(HiOutlineMailOpen)`
   font-size: 24px;
   color: var(--g9);
-  margin-right: 12px;
+  margin-right: 4px;
 `;
 
 export const GitHubsIcon = styled(AiFillGithub)`
@@ -39,10 +39,11 @@ export const FooterMain = styled(BasicMain)`
   /* font-size: 40px; */
   /* position: ${(props) => (props.position || 'static')}; */
   /* bottom: 0; */
+  padding-bottom: 20px;
 `;
 
 export const FooterContent = styled(BasicContent)`
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   /* grid-template-areas:
   "left right"; */
   align-items : end;
@@ -50,9 +51,10 @@ export const FooterContent = styled(BasicContent)`
 
 export const LeftContent = styled.div`
   display: flex;
-  flex-direction: column;
-  /* text-align: left; */
-  align-items: start;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   /* font-size: 20px; */
   gap: 4px;
   a {
@@ -60,23 +62,36 @@ export const LeftContent = styled.div`
     text-decoration: none;
     color: var(--g11);
     align-items: center;
+    border: 1px solid var(--g5);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
   }
 `;
 
 export const RightContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: end;
-  /* font-size: 20px; */
+  align-items: center;
+  font-size: 12px;
   gap: 8px;
+  padding-top: 20px;
+  /* background-color: red; */
+  border-top: 1px solid var(--g8);
   div {
     display: flex;
     gap: 12px;
   }
+  p {
+    color: var(--g8);
+  }
   a {
     display: flex;
     text-decoration: none;
-    color: var(--g11);
     align-items: center;
+    color: var(--g8);
   }
 `;

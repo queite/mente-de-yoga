@@ -12,7 +12,7 @@ export const CursosContent = styled(BasicContent)`
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     grid-template-areas:
-            "text" "img"  ;
+      "img" "text";
   }
 `;
 

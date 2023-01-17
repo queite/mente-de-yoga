@@ -16,12 +16,21 @@ export const ContentHeader = styled(BasicContent)`
     img {
       height: 80px;
     }
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 `;
 
 export const LogoNome = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
+  @media screen and (max-width: 600px) {
+      h2 {
+        font-size: 20px;
+      }
+    }
 `;
 
 export const Menu = styled.div`
@@ -39,21 +48,25 @@ export const Menu = styled.div`
       &:hover{
         border-bottom: 2px solid var(--d4);
       }    
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+      }
     }
 `;
 
 export const StLink = styled(Link)`
   font-family: 'Open Sans', sans-serif;
-  color: ${(props) => props.theme.general.links};
+  /* color: ${(props) => props.theme.general.links}; */
   border-bottom: 2px solid;
   border-color: ${(props) => props.theme.header.background};
+  color: red;
   &:hover{
     border-bottom: 2px solid var(--d4);
   }
 `;
 
 export const HomeLink = styled(Link)`
-  color: var(--g5);
+  /* color: var(--g5); */
   `;
 
 export const Img = styled.div`
@@ -62,4 +75,8 @@ export const Img = styled.div`
   background-repeat: no-repeat;
   width: 80px;
   height: 80px;
+  @media screen and (max-width: 600px) {
+      height: 40px;
+      width: 40px;
+    }
 `;
