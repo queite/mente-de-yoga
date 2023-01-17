@@ -31,8 +31,8 @@ export const St = styled.strong`
 
 export const Sk = styled.p`
   font-family: 'Optima', 'Segoe', 'Segoe UI', 'Candara', 'Calibri', 'Arial', sans-serif;
-  color: var(--g8);
-  font-size: 0.8em;
+  color: var(--g9);
+  font-size: 0.9em;
   font-weight: 100;
   padding: 8px 0;
 `;

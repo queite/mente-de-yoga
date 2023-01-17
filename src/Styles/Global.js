@@ -104,9 +104,10 @@ const Global = createGlobalStyle`
       /* font-family: 'Special Elite', cursive; */
       font-family: 'Optima', 'Segoe', 'Segoe UI', 'Candara', 'Calibri', 'Arial', sans-serif;
       font-size: 1em;
-      /* font-weight: 600; */
+      font-weight: 600;
+      color: var(--g9);
+      /* color: red; */
       font-style: italic;
-
     }
     str {
       font-weight: 700;
