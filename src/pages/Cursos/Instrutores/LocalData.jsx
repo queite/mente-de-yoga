@@ -29,7 +29,7 @@ export default function LocalData({ back }) {
               </li>
               <li>
                 <T.LIcon />
-                Início dias 24 e 25 de fevereiro de 2023
+                Início dias 25 e 26 de fevereiro de 2023
               </li>
             </T.Ul>
             <A

@@ -25,7 +25,7 @@ export default function Sobre() {
             prático desta tradição.
           </p>
           <p>
-            Sou especialisa em
+            Sou especialista em
             <skr>Yoga</skr>
             , especialista em Psicologia Corporal, instrutor de
             Ki Aikido, Bacharel em Matemática e Mestre em Matemática Aplicada.
