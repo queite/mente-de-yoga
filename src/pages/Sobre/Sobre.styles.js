@@ -10,6 +10,9 @@ export const AboutContent = styled(BasicContent)`
   grid-template-columns: 1fr 4fr;
   grid-template-areas: "img text";
   align-items: end;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Img = styled.div`
@@ -18,9 +21,17 @@ export const Img = styled.div`
         width: 400px;
         height: 500px;
         object-fit: cover;
-    }
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+      }
 `;
 
 export const GeneralInfos = styled.div`
   grid-area: text;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 `;

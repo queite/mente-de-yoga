@@ -29,6 +29,7 @@ export const GitHubsIcon = styled(AiFillGithub)`
 export const FooterMain = styled(BasicMain)`
   /* width: var(--wid); */
   min-height: 60px;
+  padding-top: 40px;
   background-color: ${(props) => props.theme.footer.background};
   /* background-color: var(--g8); */
   /* background-color: red; */
@@ -39,7 +40,7 @@ export const FooterMain = styled(BasicMain)`
   /* font-size: 40px; */
   /* position: ${(props) => (props.position || 'static')}; */
   /* bottom: 0; */
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 `;
 
 export const FooterContent = styled(BasicContent)`
