@@ -42,6 +42,27 @@ export default function LocalData({ back }) {
           </G.BasicCard>
           <G.BasicCard>
             <T.H4 infos={c}>
+              Finea
+            </T.H4>
+            <p>
+              Finea Cursos – Santa Maria RS.
+            </p>
+            <T.Ul>
+              <li>
+                <T.LIcon />
+                Início dias 6 e 7 de maio de 2023
+              </li>
+            </T.Ul>
+            <A
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/finea.sm/"
+            >
+              <str>Saiba mais ...</str>
+            </A>
+          </G.BasicCard>
+          <G.BasicCard>
+            <T.H4 infos={c}>
               Arcturus
             </T.H4>
             <p>
