@@ -6,7 +6,7 @@ import * as T from '../../../Styles/texts';
 
 // eslint-disable-next-line react/prop-types
 export default function Conteudo({ back }) {
-  const c = 'cursoInstrutores';
+  // const c = 'cursoInstrutores';
   return (
     <CursosMain back={back}>
       <CursosContentAbout>
@@ -42,10 +42,10 @@ export default function Conteudo({ back }) {
             <T.LIcon />
             Um tapete para suas práticas em Sala de aula – Ao final do cursos ele será seu.
           </T.Li> */}
-          <T.Li infos={c}>
+          {/* <T.Li infos={c}>
             <T.LIcon />
             Um livro.
-          </T.Li>
+          </T.Li> */}
         </ul>
         {' '}
         {/* <CardFormacao /> */}
